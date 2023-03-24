@@ -203,6 +203,839 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
 ]
 `;
 
+exports[`lexer > should tokenize fixtures ../tests/fixtures/content.01.md 1`] = `
+[
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Content",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "01",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Lorem",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ipsum",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "dolor",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "amet",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "consectetur",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "adipiscing",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "elit",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Phasellus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "finibus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "turpis",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "eu",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "mauris",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "commodo",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ac",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "porta",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "lacus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "vehicula",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Praesent",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sed",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "leo",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sapien",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "In",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "eu",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "aliquam",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "nunc",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "non",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "rutrum",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "lectus",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Cras",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "pharetra",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "velit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "odio",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "amet",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sollicitudin",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "lorem",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "gravida",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ut",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Sed",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "non",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sem",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "purus",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Donec",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "cursus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "at",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "elit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "vulputate",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "commodo",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Curabitur",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "venenatis",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "justo",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "eu",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "risus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "maximus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "viverra",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Morbi",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ligula",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "magna",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "semper",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "nec",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "tincidunt",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "in",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "accumsan",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "non",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "nulla",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Etiam",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ut",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "vehicula",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ipsum",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Vivamus",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "viverra",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "odio",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "eu",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "auctor",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "pharetra",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Sed",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "elit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "nunc",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "viverra",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "id",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "gravida",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ut",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "convallis",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "blandit",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sem",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
+]
+`;
+
 exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.01.md 1`] = `
 [
   Token {
@@ -253,6 +1086,245 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.02.md 1`] = 
   Token {
     "type": "Word",
     "value": "123",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.03.md 1`] = `
+[
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "1",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "2",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "3",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "4",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "5",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Heading",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "6",
   },
   Token {
     "type": "EndOfFile",
