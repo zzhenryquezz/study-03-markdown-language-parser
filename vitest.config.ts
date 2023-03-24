@@ -7,6 +7,7 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
+      reporters: 'verbose',
       watch: false,
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],

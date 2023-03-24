@@ -1,0 +1,333 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`] = `
+[
+  Token {
+    "type": "OpenCodeBlock",
+    "value": "[code]",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "result",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "1",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "2",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "
+",
+  },
+  Token {
+    "type": "CloseCodeBlock",
+    "value": "[/code]",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.01.md 1`] = `
+[
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Title",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.02.md 1`] = `
+[
+  Token {
+    "type": "Hashtag",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Hello",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "123",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.01.md 1`] = `
+[
+  Token {
+    "type": "OpenHTMLTag",
+    "value": "<b>",
+  },
+  Token {
+    "type": "Word",
+    "value": "Hello",
+  },
+  Token {
+    "type": "CloseHTMLTag",
+    "value": "</b>",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`] = `
+[
+  Token {
+    "type": "Word",
+    "value": "Hello",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "OpenHTMLTag",
+    "value": "<b>",
+  },
+  Token {
+    "type": "Word",
+    "value": "Will",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Smith",
+  },
+  Token {
+    "type": "CloseHTMLTag",
+    "value": "</b>",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`] = `
+[
+  Token {
+    "type": "Word",
+    "value": "Hello",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "OpenHTMLTag",
+    "value": "<b>",
+  },
+  Token {
+    "type": "Word",
+    "value": "Will",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Smith",
+  },
+  Token {
+    "type": "CloseHTMLTag",
+    "value": "</b>",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "How",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "are",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "you",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "?",
+  },
+]
+`;

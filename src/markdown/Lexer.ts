@@ -1,6 +1,18 @@
-import Token, { TokenType } from './Token'
+import type LexerProcessor from './LexerProcessor'
+import type Token from './Token'
+
+
+const files = import.meta.glob('./processors/*.ts', {
+    eager: true,
+})
+
+const processors = Object.values(files)
+    .filter((file: any) => file.default)
+    .map((file: any) => new file.default())
 
 export default class Lexer {
+    
+    public processors: LexerProcessor[] = processors
 
     public isAlpha(char: string){
         return /[a-zA-Z0-9?]/.test(char)
@@ -22,76 +34,13 @@ export default class Lexer {
         while(chars.length){
             const current = chars[0]
 
-            if(current === '#'){
-                tokens.push(Token.from(TokenType.Hashtag, current))
+            // console.log('current', current)
 
-                chars.shift()
-                continue
-            }
+            this.processors.sort((a, b) => a.order - b.order)
 
-            // check for close tag
+            const result = this.processors.find((p) => p.process(current, chars, tokens))
 
-            if (current === '<' && chars[1] === '/'){
-                const endIndex = chars.findIndex((c) => c === '>') + 1
-
-                const tag = chars.slice(0, endIndex).join('')
-
-                tokens.push(Token.from(TokenType.CloseHTMLTag, tag))
-
-                chars.splice(0, endIndex)
-
-                continue
-            }
-
-            // check for open tag
-
-            if (current === '<'){
-                const endIndex = chars.findIndex((c) => c === '>') + 1
-
-                const tag = chars.slice(0, endIndex).join('')
-
-                tokens.push(Token.from(TokenType.OpenHTMLTag, tag))
-
-                chars.splice(0, endIndex)
-
-                continue
-            }
-
-            // check for whitespace
-
-            if (this.isWhitespace(current)){
-                let endIndex = chars.findIndex(c => !this.isWhitespace(c))
-                
-                if (endIndex === -1) endIndex = chars.length
-
-                const whitespace = chars.slice(0, endIndex).join('')
-
-                tokens.push(Token.from(TokenType.WhiteSpace, whitespace))
-
-                if (endIndex > 0) chars.splice(0, endIndex)
-                
-                if (endIndex === 0) chars.shift()
-
-                continue
-            }
-
-            // check for word
-            
-            if (this.isAlpha(current)){
-                let endIndex = chars.findIndex(c => !this.isAlpha(c))
-                
-                if (endIndex === -1) endIndex = chars.length
-
-                const word = chars.slice(0, endIndex).join('')
-
-                tokens.push(Token.from(TokenType.Word, word))
-
-                if (endIndex > 0) chars.splice(0, endIndex)
-                
-                if (endIndex === 0) chars.shift()
-
-                continue
-            }
+            if (result) continue
 
             console.log('unhandled char', current)
 
