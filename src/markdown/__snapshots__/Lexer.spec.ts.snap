@@ -3,8 +3,21 @@
 exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`] = `
 [
   Token {
-    "type": "OpenCodeBlock",
-    "value": "[code]",
+    "type": "Symbol",
+    "value": "[",
+  },
+  Token {
+    "type": "Word",
+    "value": "code",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "]",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
     "type": "BreakLine",
@@ -92,12 +105,16 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
     "value": " ",
   },
   Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
     "type": "BreakLine",
     "value": "
 ",
   },
   Token {
-    "type": "WhiteSpace",
+    "type": "BreakLine",
     "value": "
 ",
   },
@@ -150,18 +167,34 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
     "value": "2",
   },
   Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
     "type": "BreakLine",
     "value": "
 ",
   },
   Token {
-    "type": "WhiteSpace",
+    "type": "BreakLine",
     "value": "
 ",
   },
   Token {
-    "type": "CloseCodeBlock",
-    "value": "[/code]",
+    "type": "Symbol",
+    "value": "[",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "/",
+  },
+  Token {
+    "type": "Word",
+    "value": "code",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "]",
   },
 ]
 `;
@@ -219,16 +252,36 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.02.md 1`] = 
 exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.01.md 1`] = `
 [
   Token {
-    "type": "OpenHTMLTag",
-    "value": "<b>",
+    "type": "Symbol",
+    "value": "<",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
   },
   Token {
     "type": "Word",
     "value": "Hello",
   },
   Token {
-    "type": "CloseHTMLTag",
-    "value": "</b>",
+    "type": "Symbol",
+    "value": "<",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "/",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
   },
 ]
 `;
@@ -244,8 +297,16 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
     "value": " ",
   },
   Token {
-    "type": "OpenHTMLTag",
-    "value": "<b>",
+    "type": "Symbol",
+    "value": "<",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
   },
   Token {
     "type": "Word",
@@ -260,8 +321,20 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
     "value": "Smith",
   },
   Token {
-    "type": "CloseHTMLTag",
-    "value": "</b>",
+    "type": "Symbol",
+    "value": "<",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "/",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
   },
 ]
 `;
@@ -277,8 +350,16 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`]
     "value": " ",
   },
   Token {
-    "type": "OpenHTMLTag",
-    "value": "<b>",
+    "type": "Symbol",
+    "value": "<",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
   },
   Token {
     "type": "Word",
@@ -293,13 +374,28 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`]
     "value": "Smith",
   },
   Token {
-    "type": "CloseHTMLTag",
-    "value": "</b>",
+    "type": "Symbol",
+    "value": "<",
   },
   Token {
-    "type": "BreakLine",
-    "value": "
-",
+    "type": "Symbol",
+    "value": "/",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "\\\\",
+  },
+  Token {
+    "type": "Word",
+    "value": "n",
   },
   Token {
     "type": "WhiteSpace",

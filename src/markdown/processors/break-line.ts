@@ -6,11 +6,10 @@ export default class BreakLineProcessor implements LexerProcessor {
 
     public process: LexerProcessor['process'] = (char, chars, tokens) => {
 
-        if (char !== '\\' && chars[1] !== '\n' ) return false
+        if (char !== '\n') return false
 
         tokens.push(Token.from(TokenType.BreakLine, '\n'))
 
-        chars.shift()
         chars.shift()
 
         return true

@@ -10,6 +10,12 @@ describe('lexer', () => {
     })
 
     it.each(Object.entries(files))('should tokenize fixtures %s', (filename, content) => {
-        expect(lexer.tokenize(content)).toMatchSnapshot()        
+        const tokens = lexer.tokenize(content)
+
+        const length = tokens.reduce((acc, token) => acc + token.value.length, 0)
+
+        expect(lexer.tokenize(content)).toMatchSnapshot()
+
+        expect(length).toBe(content.length)
     })
 })

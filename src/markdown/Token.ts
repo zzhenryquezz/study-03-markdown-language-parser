@@ -4,10 +4,6 @@ export enum TokenType {
     Hashtag = 'Hashtag',
     WhiteSpace = 'WhiteSpace',
     BreakLine = 'BreakLine',
-    OpenHTMLTag = 'OpenHTMLTag',
-    CloseHTMLTag = 'CloseHTMLTag',
-    OpenCodeBlock = 'OpenCodeBlock',
-    CloseCodeBlock = 'CloseCodeBlock',
 }
 
 // TODO: add startIndex and endIndex
