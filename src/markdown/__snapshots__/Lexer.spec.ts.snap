@@ -196,6 +196,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
     "type": "Symbol",
     "value": "]",
   },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
 ]
 `;
 
@@ -221,6 +225,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.01.md 1`] = 
     "type": "Word",
     "value": "Title",
   },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
 ]
 `;
 
@@ -245,6 +253,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.02.md 1`] = 
   Token {
     "type": "Word",
     "value": "123",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
   },
 ]
 `;
@@ -282,6 +294,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.01.md 1`]
   Token {
     "type": "Symbol",
     "value": ">",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
   },
 ]
 `;
@@ -335,6 +351,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
   Token {
     "type": "Symbol",
     "value": ">",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
   },
 ]
 `;
@@ -424,6 +444,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`]
   Token {
     "type": "Symbol",
     "value": "?",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
   },
 ]
 `;

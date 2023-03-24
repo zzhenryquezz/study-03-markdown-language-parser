@@ -1,5 +1,5 @@
 import type LexerProcessor from './LexerProcessor'
-import type Token from './Token'
+import Token, { TokenType } from './Token'
 
 
 const files = import.meta.glob('./processors/*.ts', {
@@ -46,6 +46,8 @@ export default class Lexer {
 
             chars.shift()
         }
+
+        tokens.push(Token.from(TokenType.EndOfFile, ''))
 
         return tokens
     }

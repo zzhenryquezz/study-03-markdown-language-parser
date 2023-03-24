@@ -4,11 +4,12 @@ export enum TokenType {
     Hashtag = 'Hashtag',
     WhiteSpace = 'WhiteSpace',
     BreakLine = 'BreakLine',
+    EndOfFile = 'EndOfFile',
 }
 
 // TODO: add startIndex and endIndex
 export default class Token {
-    public type: TokenType | string
+    public type: TokenType
     public value: string
 
     constructor(props: Token) {
@@ -16,7 +17,7 @@ export default class Token {
         this.value = props.value
     }
 
-    public static from(type: TokenType | string, value: string) {
+    public static from(type: TokenType, value: string) {
         return new Token({ type, value })
     }
 }
