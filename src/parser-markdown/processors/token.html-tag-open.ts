@@ -25,7 +25,7 @@ export default class OpenHTMLTagProcessor implements MarkdownTokenProcessor {
 
         const node = new MarkdownNode({
             _parentId: mainNode._id,
-            _parent: mainNode,
+           //  _parent: mainNode,
             type: "OpenHTMLTag",
             data: {
                 raw,

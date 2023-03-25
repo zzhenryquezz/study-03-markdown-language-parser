@@ -11,7 +11,7 @@ export default class WhiteSpaceProcessor implements MarkdownTokenProcessor {
 
         const node = new MarkdownNode({
             _parentId: mainNode._id,
-            _parent: mainNode,
+           //  _parent: mainNode,
             type: "WhiteSpace",
             data: {
                 value: " "

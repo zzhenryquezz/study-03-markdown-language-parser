@@ -20,7 +20,7 @@ export default class CloseBoldProcessor implements MarkdownTokenProcessor {
 
         const node = new MarkdownNode({
             _parentId: mainNode._id,
-            _parent: mainNode,
+           //  _parent: mainNode,
             type: "CloseBold",
             data: {
                 value: "**"

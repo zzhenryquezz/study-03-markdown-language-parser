@@ -1,31 +1,42 @@
 import type MainNode from "@/parser-main/MainNode";
 import MainParser from "@/parser-main/MainParser";
 import type MarkdownNode from "./MarkdownNode";
+import type MarkdownNodeProcessor from "./MarkdownNodeProcessor";
 import type MarkdownTokenProcessor from "./MarkdownTokenProcessor";
 
 
-const files = import.meta.glob('./processors/*.ts', {
+const tokenFiles = import.meta.glob('./processors/token.*.ts', {
     eager: true,
 })
 
-const processors: MarkdownTokenProcessor[] = Object.values(files)
+const nodeFiles = import.meta.glob('./processors/node.*.ts', {
+    eager: true,
+})
+
+const tokenProcessors: MarkdownTokenProcessor[] = Object.values(tokenFiles)
+    .filter((file: any) => file.default)
+    .map((file: any) => new file.default())
+
+const nodeProcessors: MarkdownNodeProcessor[] = Object.values(nodeFiles)
     .filter((file: any) => file.default)
     .map((file: any) => new file.default())
 
 export default class MarkdonwParser extends MainParser {
 
-    public processors: MarkdownTokenProcessor[] = processors
+    public tokenProcessors: MarkdownTokenProcessor[] = tokenProcessors
+    public nodeProcessors: MarkdownNodeProcessor[] = nodeProcessors
 
     public processMainNode(token: MainNode) {
         const tokens = token.tokens.slice()
         const markdownNodes: MarkdownNode[] = []
 
-        this.processors.sort((a, b) => a.order - b.order)
+        this.tokenProcessors.sort((a, b) => a.order - b.order)
+        this.nodeProcessors.sort((a, b) => a.order - b.order)
 
         while (tokens.length) {
             const current = tokens[0]
 
-            const result = this.processors.find((p) => p.process({ mainNode: token, current, tokens, markdownNodes }))
+            const result = this.tokenProcessors.find((p) => p.process({ mainNode: token, current, tokens, markdownNodes }))
 
             if (result) continue
 
@@ -34,7 +45,9 @@ export default class MarkdonwParser extends MainParser {
             tokens.shift()
         }
 
-        return markdownNodes
+        const result = this.nodeProcessors.reduce((r, p) => p.process(r), markdownNodes)
+
+        return result
     }
 
     public toMarkdownNodes(){

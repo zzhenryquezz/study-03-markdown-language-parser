@@ -14,7 +14,7 @@ export default class OpenBoldProcessor implements MarkdownTokenProcessor {
 
         const node = new MarkdownNode({
             _parentId: mainNode._id,
-            _parent: mainNode,
+           //  _parent: mainNode,
             type: "OpenBold",
             data: {
                 value: "**"

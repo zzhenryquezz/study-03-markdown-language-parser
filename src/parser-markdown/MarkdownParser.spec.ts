@@ -3,7 +3,7 @@ import Lexer from '../lexer/Lexer'
 import MarkdonwParser from './MarkdownParser'
 
 
-describe('parser-main', () => {
+describe('parser-markdown', () => {
 
     const lexer = new Lexer()
     const parser = new MarkdonwParser()
@@ -21,6 +21,6 @@ describe('parser-main', () => {
         const result = parser.toMarkdownNodes()
 
         expect(result).toMatchSnapshot()
-    })    
+    })   
     
 })
