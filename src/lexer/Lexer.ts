@@ -42,7 +42,7 @@ export default class Lexer {
 
             if (result) continue
 
-            console.log('unhandled char', current)
+            console.log('[lexer] unhandled char', current)
 
             chars.shift()
         }

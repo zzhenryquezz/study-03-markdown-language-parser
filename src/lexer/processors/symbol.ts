@@ -6,7 +6,7 @@ export default class SymbolProcessor implements LexerProcessor {
 
     public process: LexerProcessor['process'] = (char, chars, tokens) => {
 
-        const regex = /[?!.,:;(){}[\]=>+/\\<>]/
+        const regex = /[?!.,:;(){}[\]=>+/\\<>*#]/
 
         if (!regex.test(char)) return false
         
