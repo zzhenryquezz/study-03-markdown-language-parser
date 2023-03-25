@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import type MarkdownNode from '@/parser-markdown/MarkdownNode';
+import { computed, onMounted, ref, watch } from 'vue';
 
 
 // model
-const modelValue = defineProp<string>('modelValue')
+const modelValue = defineProp<MarkdownNode>('modelValue')
 const update = defineEmit('update:modelValue')
 
 const model = computed({
@@ -12,16 +13,26 @@ const model = computed({
 });
 
 // level
-const level = defineProp<number>('level', {
-    required: true,
-})
+const level = ref(1)
+const text = ref('')
 
 const tag = computed(() => `h${level.value}`)
+
+function setText() {
+    text.value = model.value.data.value;
+}
+
+function setLevel() {
+    level.value = model.value.data.level;
+}
+
+watch(model, setText, { immediate: true });
+watch(model, setLevel, { immediate: true });
 
 
 </script>
 <template>
     <component :is="tag" >
-        {{ model }}
+        {{ text }}
     </component>
 </template>
