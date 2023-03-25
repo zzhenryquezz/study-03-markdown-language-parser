@@ -1,9 +1,8 @@
-import type MainNode from "@/parser-main/MainNode";
-
 export enum MarkdownNodeType {
     Word = 'Word',
     BreakLine = 'BreakLine',
     Paragraph = 'Paragraph',
+    WhiteSpace = 'WhiteSpace',
 }
 
 export default class MarkdownNode {

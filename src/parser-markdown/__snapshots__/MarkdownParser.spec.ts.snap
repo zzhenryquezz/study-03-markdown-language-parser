@@ -20,6 +20,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "]",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -176,6 +191,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
           },
           "type": "WhiteSpace",
         },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "b",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -276,6 +306,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -310,6 +355,13 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
           "_parentId": 6,
           "data": {
             "value": "code",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "]",
           },
           "type": "Word",
         },
@@ -381,6 +433,13 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/bold.01.md 1`
             "value": "bold",
           },
           "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "**",
+          },
+          "type": "CloseBold",
         },
       ],
     },
@@ -677,6 +736,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -854,6 +928,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -1010,6 +1099,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
       ],
     },
     "type": "Paragraph",
@@ -1165,6 +1269,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
             "value": "commodo",
           },
           "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
         },
       ],
     },
@@ -1433,6 +1552,21 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
             "value": "nulla",
           },
           "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
         },
       ],
     },
@@ -1751,6 +1885,13 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
           },
           "type": "Word",
         },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
       ],
     },
     "type": "Paragraph",
@@ -1890,17 +2031,17 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.01
   MarkdownNode {
     "_parentId": 0,
     "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "Hello",
-          },
-          "type": "Word",
-        },
-      ],
+      "value": "Hello",
     },
-    "type": "Paragraph",
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 0,
+    "data": {
+      "raw": "</b>",
+      "value": "b",
+    },
+    "type": "CloseHTMLTag",
   },
 ]
 `;
@@ -1953,6 +2094,14 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.02
             "value": "Smith",
           },
           "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "raw": "</b>",
+            "value": "b",
+          },
+          "type": "CloseHTMLTag",
         },
       ],
     },
@@ -2071,6 +2220,13 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.03
           "_parentId": 0,
           "data": {
             "value": "you",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "?",
           },
           "type": "Word",
         },

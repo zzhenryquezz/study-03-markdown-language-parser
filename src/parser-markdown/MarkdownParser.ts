@@ -1,3 +1,4 @@
+import { TokenType } from "@/lexer/Token";
 import type MainNode from "@/parser-main/MainNode";
 import MainParser from "@/parser-main/MainParser";
 import type MarkdownNode from "./MarkdownNode";
@@ -38,21 +39,28 @@ export default class MarkdonwParser extends MainParser {
 
             const result = this.tokenProcessors.find((p) => p.process({ mainNode: token, current, tokens, markdownNodes }))
 
+            // console.log('[markdown-parser] token', current, result)
+
             if (result) continue
+
+            if (current.type === TokenType.EndOfFile) {
+                tokens.shift()
+                continue
+            }
 
             console.log('[markdown-parser] unhandled token', current)
 
             tokens.shift()
         }
 
-        const result = this.nodeProcessors.reduce((r, p) => p.process(r), markdownNodes)
-
-        return result
+        return this.nodeProcessors.reduce((r, p) => p.process(r), markdownNodes)
     }
 
     public toMarkdownNodes(){
 
         const nodes = this.toNodes()
+
+        this.nodeProcessors.sort((a, b) => a.order - b.order)
         
         const markdownNodes = nodes.reduce<MarkdownNode[]>((r, n) => r.concat(this.processMainNode(n)), [])
 
