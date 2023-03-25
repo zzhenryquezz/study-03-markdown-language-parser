@@ -2,14 +2,15 @@ import type Token from "../lexer/Token";
 import { TokenType } from "../lexer/Token";
 import MainNode from "./MainNode";
 
-export default class Parser {
-    constructor(private tokens: Token[]) {}
+export default class MainParser {
+    constructor(private tokens: Token[] = []) {}
 
-    public static from(tokens: Token[]) {
-        return new Parser(tokens)
+
+    public setTokens(tokens: Token[]) {
+        this.tokens = tokens
     }
 
-    public parce() {
+    public toNodes() {
 
         let currentStart = 0
 

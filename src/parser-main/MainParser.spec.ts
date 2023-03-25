@@ -1,13 +1,13 @@
 import { describe, it, expect } from 'vitest'
 
-import Parser from './Parser'
-import Lexer from './../lexer/Lexer'
+import MainParser from './MainParser'
+import Lexer from '../lexer/Lexer'
 
 
-describe('parser', () => {
+describe('parser-main', () => {
 
     const lexer = new Lexer()
-
+    const parser = new MainParser()
 
     const files = import.meta.glob('../tests/fixtures/*.md', {
         eager: true,
@@ -17,10 +17,11 @@ describe('parser', () => {
     it.each(Object.entries(files))('should parse fixtures %s', (filename, content) => {
         const tokens = lexer.tokenize(content)
 
-        const result = Parser.from(tokens).parce()
+        parser.setTokens(tokens)
+
+        const result = parser.toNodes()
 
         expect(result).toMatchSnapshot()
-    })
-    
+    })    
     
 })
