@@ -34,8 +34,6 @@ export default class Lexer {
         while(chars.length){
             const current = chars[0]
 
-            // console.log('current', current)
-
             this.processors.sort((a, b) => a.order - b.order)
 
             const result = this.processors.find((p) => p.process(current, chars, tokens))
