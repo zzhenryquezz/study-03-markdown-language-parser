@@ -21,7 +21,11 @@ describe('parser-main', () => {
 
         const result = parser.toNodes()
 
+        const length = result.reduce((r, n) => r + n.tokens.length, 0)
+
         expect(result).toMatchSnapshot()
+
+        expect(length).toBe(tokens.length)
     })    
     
 })

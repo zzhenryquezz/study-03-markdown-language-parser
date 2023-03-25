@@ -4,9 +4,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
 [
   MainNode {
     "_id": 0,
-    "content": "[code]",
+    "content": "[code]
+",
     "position": {
-      "end": 6,
+      "end": 7,
       "start": 0,
     },
     "tokens": [
@@ -34,6 +35,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
         "type": "Symbol",
         "value": "]",
       },
+      {
+        "position": {
+          "end": 7,
+          "start": 6,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -58,9 +68,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
   },
   MainNode {
     "_id": 2,
-    "content": "const sum = (a, b) => a + b",
+    "content": "const sum = (a, b) => a + b
+",
     "position": {
-      "end": 35,
+      "end": 36,
       "start": 8,
     },
     "tokens": [
@@ -232,6 +243,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
         "type": "Word",
         "value": "b",
       },
+      {
+        "position": {
+          "end": 36,
+          "start": 35,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -256,9 +276,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
   },
   MainNode {
     "_id": 4,
-    "content": "const result = sum(1, 2)",
+    "content": "const result = sum(1, 2)
+",
     "position": {
-      "end": 61,
+      "end": 62,
       "start": 37,
     },
     "tokens": [
@@ -366,6 +387,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
         "type": "Symbol",
         "value": ")",
       },
+      {
+        "position": {
+          "end": 62,
+          "start": 61,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -427,6 +457,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/block.code.01.md 
         },
         "type": "Symbol",
         "value": "]",
+      },
+      {
+        "position": {
+          "end": 70,
+          "start": 70,
+        },
+        "type": "EndOfFile",
+        "value": "",
       },
     ],
   },
@@ -531,6 +569,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/bold.01.md 1`] = 
         "type": "Symbol",
         "value": "*",
       },
+      {
+        "position": {
+          "end": 21,
+          "start": 21,
+        },
+        "type": "EndOfFile",
+        "value": "",
+      },
     ],
   },
 ]
@@ -540,9 +586,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
 [
   MainNode {
     "_id": 0,
-    "content": "# Content 01",
+    "content": "# Content 01
+",
     "position": {
-      "end": 12,
+      "end": 13,
       "start": 0,
     },
     "tokens": [
@@ -586,6 +633,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Word",
         "value": "01",
       },
+      {
+        "position": {
+          "end": 13,
+          "start": 12,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -610,9 +666,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
   },
   MainNode {
     "_id": 2,
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus turpis eu mauris commodo, ac porta lacus vehicula.",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus turpis eu mauris commodo, ac porta lacus vehicula.
+",
     "position": {
-      "end": 139,
+      "end": 140,
       "start": 14,
     },
     "tokens": [
@@ -928,6 +985,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Symbol",
         "value": ".",
       },
+      {
+        "position": {
+          "end": 140,
+          "start": 139,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -952,9 +1018,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
   },
   MainNode {
     "_id": 4,
-    "content": "Praesent sed leo sapien. In eu aliquam nunc, non rutrum lectus.",
+    "content": "Praesent sed leo sapien. In eu aliquam nunc, non rutrum lectus.
+",
     "position": {
-      "end": 204,
+      "end": 205,
       "start": 141,
     },
     "tokens": [
@@ -1150,6 +1217,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Symbol",
         "value": ".",
       },
+      {
+        "position": {
+          "end": 205,
+          "start": 204,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -1174,9 +1250,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
   },
   MainNode {
     "_id": 6,
-    "content": "Cras pharetra velit odio, sit amet sollicitudin lorem gravida ut.",
+    "content": "Cras pharetra velit odio, sit amet sollicitudin lorem gravida ut.
+",
     "position": {
-      "end": 271,
+      "end": 272,
       "start": 206,
     },
     "tokens": [
@@ -1348,6 +1425,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Symbol",
         "value": ".",
       },
+      {
+        "position": {
+          "end": 272,
+          "start": 271,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -1372,9 +1458,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
   },
   MainNode {
     "_id": 8,
-    "content": "Sed non sem purus. Donec cursus at elit vulputate commodo.",
+    "content": "Sed non sem purus. Donec cursus at elit vulputate commodo.
+",
     "position": {
-      "end": 331,
+      "end": 332,
       "start": 273,
     },
     "tokens": [
@@ -1546,6 +1633,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Symbol",
         "value": ".",
       },
+      {
+        "position": {
+          "end": 332,
+          "start": 331,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -1570,9 +1666,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
   },
   MainNode {
     "_id": 10,
-    "content": "Curabitur venenatis justo eu risus maximus viverra. Morbi ligula magna, semper nec tincidunt in, accumsan non nulla.",
+    "content": "Curabitur venenatis justo eu risus maximus viverra. Morbi ligula magna, semper nec tincidunt in, accumsan non nulla.
+",
     "position": {
-      "end": 449,
+      "end": 450,
       "start": 333,
     },
     "tokens": [
@@ -1871,6 +1968,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         },
         "type": "Symbol",
         "value": ".",
+      },
+      {
+        "position": {
+          "end": 450,
+          "start": 449,
+        },
+        "type": "BreakLine",
+        "value": "
+",
       },
     ],
   },
@@ -2254,6 +2360,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/content.01.md 1`]
         "type": "Symbol",
         "value": ".",
       },
+      {
+        "position": {
+          "end": 577,
+          "start": 577,
+        },
+        "type": "EndOfFile",
+        "value": "",
+      },
     ],
   },
 ]
@@ -2308,6 +2422,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.01.md 1`]
         },
         "type": "Word",
         "value": "Title",
+      },
+      {
+        "position": {
+          "end": 9,
+          "start": 9,
+        },
+        "type": "EndOfFile",
+        "value": "",
       },
     ],
   },
@@ -2364,6 +2486,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.02.md 1`]
         "type": "Word",
         "value": "123",
       },
+      {
+        "position": {
+          "end": 11,
+          "start": 11,
+        },
+        "type": "EndOfFile",
+        "value": "",
+      },
     ],
   },
 ]
@@ -2373,9 +2503,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
 [
   MainNode {
     "_id": 0,
-    "content": "# Heading 1",
+    "content": "# Heading 1
+",
     "position": {
-      "end": 11,
+      "end": 12,
       "start": 0,
     },
     "tokens": [
@@ -2419,6 +2550,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         "type": "Word",
         "value": "1",
       },
+      {
+        "position": {
+          "end": 12,
+          "start": 11,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -2443,9 +2583,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
   },
   MainNode {
     "_id": 2,
-    "content": "## Heading 2",
+    "content": "## Heading 2
+",
     "position": {
-      "end": 25,
+      "end": 26,
       "start": 13,
     },
     "tokens": [
@@ -2497,6 +2638,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         "type": "Word",
         "value": "2",
       },
+      {
+        "position": {
+          "end": 26,
+          "start": 25,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -2521,9 +2671,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
   },
   MainNode {
     "_id": 4,
-    "content": "### Heading 3",
+    "content": "### Heading 3
+",
     "position": {
-      "end": 40,
+      "end": 41,
       "start": 27,
     },
     "tokens": [
@@ -2583,6 +2734,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         "type": "Word",
         "value": "3",
       },
+      {
+        "position": {
+          "end": 41,
+          "start": 40,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -2607,9 +2767,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
   },
   MainNode {
     "_id": 6,
-    "content": "#### Heading 4",
+    "content": "#### Heading 4
+",
     "position": {
-      "end": 56,
+      "end": 57,
       "start": 42,
     },
     "tokens": [
@@ -2677,6 +2838,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         "type": "Word",
         "value": "4",
       },
+      {
+        "position": {
+          "end": 57,
+          "start": 56,
+        },
+        "type": "BreakLine",
+        "value": "
+",
+      },
     ],
   },
   MainNode {
@@ -2701,9 +2871,10 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
   },
   MainNode {
     "_id": 8,
-    "content": "##### Heading 5",
+    "content": "##### Heading 5
+",
     "position": {
-      "end": 73,
+      "end": 74,
       "start": 58,
     },
     "tokens": [
@@ -2778,6 +2949,15 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         },
         "type": "Word",
         "value": "5",
+      },
+      {
+        "position": {
+          "end": 74,
+          "start": 73,
+        },
+        "type": "BreakLine",
+        "value": "
+",
       },
     ],
   },
@@ -2889,6 +3069,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/heading.03.md 1`]
         "type": "Word",
         "value": "6",
       },
+      {
+        "position": {
+          "end": 91,
+          "start": 91,
+        },
+        "type": "EndOfFile",
+        "value": "",
+      },
     ],
   },
 ]
@@ -2967,6 +3155,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/html.tag.b.01.md 
         },
         "type": "Symbol",
         "value": ">",
+      },
+      {
+        "position": {
+          "end": 12,
+          "start": 12,
+        },
+        "type": "EndOfFile",
+        "value": "",
       },
     ],
   },
@@ -3078,6 +3274,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/html.tag.b.02.md 
         },
         "type": "Symbol",
         "value": ">",
+      },
+      {
+        "position": {
+          "end": 23,
+          "start": 23,
+        },
+        "type": "EndOfFile",
+        "value": "",
       },
     ],
   },
@@ -3261,6 +3465,14 @@ exports[`parser-main > should parse fixtures ../tests/fixtures/html.tag.b.03.md 
         },
         "type": "Symbol",
         "value": "?",
+      },
+      {
+        "position": {
+          "end": 38,
+          "start": 38,
+        },
+        "type": "EndOfFile",
+        "value": "",
       },
     ],
   },
