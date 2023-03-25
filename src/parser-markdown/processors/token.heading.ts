@@ -1,10 +1,10 @@
 import MarkdownNode from "../MarkdownNode";
-import type MarkdownProcessor from "../MarkdownProcessor";
+import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
-export default class HeadingProcessor implements MarkdownProcessor {
+export default class HeadingProcessor implements MarkdownTokenProcessor {
     public order = 10
 
-    public process: MarkdownProcessor["process"] = ({ mainNode, tokens, markdownNodes }) => {
+    public process: MarkdownTokenProcessor["process"] = ({ mainNode, tokens, markdownNodes }) => {
         if (tokens[0].value !== "#") return false
 
         const level = tokens.filter((t) => t.value === "#").length

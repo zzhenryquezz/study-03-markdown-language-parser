@@ -1,10 +1,10 @@
 import MarkdownNode from "../MarkdownNode";
-import type MarkdownProcessor from "../MarkdownProcessor";
+import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
-export default class OpenBoldProcessor implements MarkdownProcessor {
-    public order = 20
+export default class CloseBoldProcessor implements MarkdownTokenProcessor {
+    public order = 10
 
-    public process: MarkdownProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
+    public process: MarkdownTokenProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
 
         if (current.value !== "*") return false
 
@@ -12,10 +12,16 @@ export default class OpenBoldProcessor implements MarkdownProcessor {
 
         if (length < 2) return false
 
+        const hasOpen = markdownNodes
+            .slice()
+            .reverse().find((n) => n.type === "OpenBold")
+
+        if (!hasOpen) return false
+
         const node = new MarkdownNode({
             _parentId: mainNode._id,
             _parent: mainNode,
-            type: "OpenBold",
+            type: "CloseBold",
             data: {
                 value: "**"
             }

@@ -1,20 +1,20 @@
 import type MainNode from "@/parser-main/MainNode";
 import MainParser from "@/parser-main/MainParser";
 import type MarkdownNode from "./MarkdownNode";
-import type MarkdownProcessor from "./MarkdownProcessor";
+import type MarkdownTokenProcessor from "./MarkdownTokenProcessor";
 
 
 const files = import.meta.glob('./processors/*.ts', {
     eager: true,
 })
 
-const processors: MarkdownProcessor[] = Object.values(files)
+const processors: MarkdownTokenProcessor[] = Object.values(files)
     .filter((file: any) => file.default)
     .map((file: any) => new file.default())
 
 export default class MarkdonwParser extends MainParser {
 
-    public processors: MarkdownProcessor[] = processors
+    public processors: MarkdownTokenProcessor[] = processors
 
     public processMainNode(token: MainNode) {
         const tokens = token.tokens.slice()

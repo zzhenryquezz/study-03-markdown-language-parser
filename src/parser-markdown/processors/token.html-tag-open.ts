@@ -1,9 +1,9 @@
 import type Token from "@/lexer/Token";
 import { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
-import type MarkdownProcessor from "../MarkdownProcessor";
+import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
-export default class OpenHTMLTagProcessor implements MarkdownProcessor {
+export default class OpenHTMLTagProcessor implements MarkdownTokenProcessor {
     public order = 20
 
     public isOpenHTMLTag = (tokens: Token[]) => {
@@ -16,7 +16,7 @@ export default class OpenHTMLTagProcessor implements MarkdownProcessor {
         return true
     }
 
-    public process: MarkdownProcessor["process"] = ({ mainNode, tokens, markdownNodes }) => {
+    public process: MarkdownTokenProcessor["process"] = ({ mainNode, tokens, markdownNodes }) => {
 
         if (!this.isOpenHTMLTag(tokens)) return false
 

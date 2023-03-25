@@ -9,7 +9,7 @@ interface Options {
     markdownNodes: MarkdownNode[]
 }
 
-export default interface MarkdownProcessor {
+export default interface MarkdownTokenProcessor {
     order: number
     process: (options: Options) => boolean
 }

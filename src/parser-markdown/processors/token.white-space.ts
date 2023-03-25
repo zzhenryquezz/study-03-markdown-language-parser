@@ -1,11 +1,11 @@
 import { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
-import type MarkdownProcessor from "../MarkdownProcessor";
+import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
-export default class WhiteSpaceProcessor implements MarkdownProcessor {
+export default class WhiteSpaceProcessor implements MarkdownTokenProcessor {
     public order = 20
 
-    public process: MarkdownProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
+    public process: MarkdownTokenProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
 
         if (current.type !== TokenType.WhiteSpace) return false
 

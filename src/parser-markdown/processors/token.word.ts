@@ -1,11 +1,11 @@
 import { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
-import type MarkdownProcessor from "../MarkdownProcessor";
+import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
-export default class WordProcessor implements MarkdownProcessor {
+export default class WordProcessor implements MarkdownTokenProcessor {
     public order = 90
 
-    public process: MarkdownProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
+    public process: MarkdownTokenProcessor["process"] = ({ current, mainNode, tokens, markdownNodes }) => {
 
         if (![TokenType.Word, TokenType.Symbol].includes( current.type)) return false
 
