@@ -4,7 +4,7 @@ describe('lexer', () => {
 
     const lexer = new Lexer()
     
-    const files = import.meta.glob('../tests/fixtures/heading*.md', {
+    const files = import.meta.glob('../tests/fixtures/*.md', {
         eager: true,
         as: 'raw'
     })
