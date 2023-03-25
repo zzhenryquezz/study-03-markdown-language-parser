@@ -1,3 +1,4 @@
+import Lexer from "@/lexer/Lexer";
 import type Token from "../lexer/Token";
 import { TokenType } from "../lexer/Token";
 import MainNode from "./MainNode";
@@ -8,6 +9,16 @@ export default class MainParser {
 
     public setTokens(tokens: Token[]) {
         this.tokens = tokens
+    }
+
+    public setTokensByText(text: string) {
+        const lexer = new Lexer()
+        
+        this.tokens = lexer.tokenize(text)
+    }
+
+    public setTokensByNodes(nodes: MainNode[]) {
+        this.tokens = nodes.map(n => n.tokens).flat()
     }
 
     public toNodes() {
