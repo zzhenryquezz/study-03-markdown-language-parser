@@ -1,4 +1,4 @@
-import { TokenType } from "@/lexer/Token";
+import Token, { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -23,5 +23,14 @@ export default class WhiteSpaceProcessor implements MarkdownTokenProcessor {
         tokens.shift()        
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "WhiteSpace") return []
+
+        return [
+            Token.from(TokenType.WhiteSpace, " ")
+        ]
+
     }
 }

@@ -21,6 +21,15 @@ describe('parser-markdown', () => {
         const result = parser.toMarkdownNodes()
 
         expect(result).toMatchSnapshot()
-    })   
+    })
+    
+    it.each(Object.entries(files))('should revert fixtures to text %s', (_, payload) => {
+
+        parser.setTokensByText(payload)
+
+        const markdownNodes = parser.toMarkdownNodes()
+
+        expect(parser.convertMarkdownNodesToText(markdownNodes)).toBe(payload)
+    })
     
 })

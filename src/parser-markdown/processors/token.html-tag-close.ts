@@ -1,4 +1,4 @@
-import type Token from "@/lexer/Token";
+import Token from "@/lexer/Token";
 import { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
@@ -41,5 +41,17 @@ export default class OpenHTMLTagProcessor implements MarkdownTokenProcessor {
         tokens.splice(0, 4)
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "CloseHTMLTag") return []
+
+        return [
+            Token.fromSymbol("<"),
+            Token.fromSymbol("/"),
+            Token.from(TokenType.Word, node.data.value),
+            Token.fromSymbol(">")
+        ]
+
     }
 }

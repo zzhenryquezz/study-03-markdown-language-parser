@@ -1,3 +1,5 @@
+import Token, { TokenType } from "@/lexer/Token";
+import MainNode from "@/parser-main/MainNode";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -32,5 +34,15 @@ export default class CloseBoldProcessor implements MarkdownTokenProcessor {
         tokens.splice(0, 2)
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "CloseBold") return []
+
+        return [
+            Token.from(TokenType.Symbol, "*"),
+            Token.from(TokenType.Symbol, "*")
+        ]
+
     }
 }

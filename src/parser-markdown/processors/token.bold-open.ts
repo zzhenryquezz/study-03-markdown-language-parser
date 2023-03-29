@@ -1,3 +1,4 @@
+import Token, { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -26,5 +27,14 @@ export default class OpenBoldProcessor implements MarkdownTokenProcessor {
         tokens.splice(0, 2)
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "OpenBold") return []
+
+        return [
+            Token.from(TokenType.Symbol, "*"),
+            Token.from(TokenType.Symbol, "*")
+        ]
     }
 }

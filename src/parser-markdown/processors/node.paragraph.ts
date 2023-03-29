@@ -12,8 +12,6 @@ export default class ParagraphProcessor implements MarkdownNodeProcessor {
     }
 
     public process: MarkdownNodeProcessor["process"] = (nodes) => {
-        const result: MarkdownNode[] = []
-
         if (!this.isStartParagraph(nodes[0])) return nodes
 
         const node = new MarkdownNode({
@@ -25,5 +23,23 @@ export default class ParagraphProcessor implements MarkdownNodeProcessor {
         })
         
         return [node]
+    }
+
+    public reverse: MarkdownNodeProcessor["reverse"] = (nodes) => {
+        const result: MarkdownNode[] = []
+
+        for (let i = 0; i < nodes.length; i++) {
+            const current = nodes[i]
+
+            if (current.type !== MarkdownNodeType.Paragraph) {
+                result.push(current)
+                continue
+            }
+
+            result.push(...current.data.children)
+            
+        }
+
+        return result
     }
 }

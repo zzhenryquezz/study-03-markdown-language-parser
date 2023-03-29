@@ -20,4 +20,20 @@ export default class Token {
     public static from(type: TokenType, value: string) {
         return new Token({ type, value })
     }
+
+    public static fromSymbol(value: string) {
+        return Token.from(TokenType.Symbol, value)
+    }
+
+    public static fromWord(value: string) {
+        return Token.from(TokenType.Word, value)
+    }
+
+    public static fromWhiteSpace() {
+        return Token.from(TokenType.WhiteSpace, ' ')
+    }
+
+    public static fromBreakLine() {
+        return Token.from(TokenType.BreakLine, '\n')
+    }
 }

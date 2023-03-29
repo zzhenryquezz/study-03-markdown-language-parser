@@ -1,3 +1,4 @@
+import Token from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -8,13 +9,14 @@ export default class HeadingProcessor implements MarkdownTokenProcessor {
         if (tokens[0].value !== "#") return false
 
         const level = tokens.filter((t) => t.value === "#").length
-        const value = tokens.slice(level).map((t) => t.value).join("").trim()
+        const raw = tokens.slice(level).map((t) => t.value).join("")
+        const value = raw.trim()
 
         const node = new MarkdownNode({
             _parentId: mainNode._id,
-           //  _parent: mainNode,
             type: "Heading",
             data: {
+                breakLineOnEnd: raw.endsWith("\n"),
                 level,
                 value
             }
@@ -25,5 +27,36 @@ export default class HeadingProcessor implements MarkdownTokenProcessor {
         tokens.splice(0, tokens.length)
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "Heading") return []
+
+        const result: Token[] = []
+
+        const level = node.data.level ?? 1
+        const value = (node.data.value ?? "").split(" ")
+
+        for (let i = 0; i < level; i++) {
+            result.push(Token.fromSymbol("#"))
+        }
+
+        result.push(Token.fromWhiteSpace())
+
+        for (let i = 0; i < value.length; i++) {
+            result.push(Token.fromWord(value[i]))
+
+            if (i < value.length - 1) {
+                result.push(Token.fromWhiteSpace())
+            }
+
+        }
+
+        if (node.data.breakLineOnEnd) {
+            result.push(Token.fromBreakLine())
+        }
+
+
+        return result
     }
 }

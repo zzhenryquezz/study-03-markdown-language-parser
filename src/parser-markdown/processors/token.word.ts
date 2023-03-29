@@ -1,4 +1,4 @@
-import { TokenType } from "@/lexer/Token";
+import Token, { TokenType } from "@/lexer/Token";
 import MarkdownNode from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -24,5 +24,20 @@ export default class WordProcessor implements MarkdownTokenProcessor {
         
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== "Word") return []
+
+        if (/[a-z0-9]/.test(node.data.value)) {
+            return [
+                Token.from(TokenType.Word, node.data.value)
+            ]
+        }
+
+        return [
+            Token.from(TokenType.Symbol, node.data.value)
+        ]
+
     }
 }

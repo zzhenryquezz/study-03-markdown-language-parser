@@ -453,6 +453,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 0,
     "data": {
+      "breakLineOnEnd": true,
       "level": 1,
       "value": "Content 01",
     },
@@ -1904,6 +1905,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.01.md
   MarkdownNode {
     "_parentId": 0,
     "data": {
+      "breakLineOnEnd": false,
       "level": 3,
       "value": "Title",
     },
@@ -1917,6 +1919,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.02.md
   MarkdownNode {
     "_parentId": 0,
     "data": {
+      "breakLineOnEnd": false,
       "level": 1,
       "value": "Hello 123",
     },
@@ -1930,6 +1933,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 0,
     "data": {
+      "breakLineOnEnd": true,
       "level": 1,
       "value": "Heading 1",
     },
@@ -1946,6 +1950,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 2,
     "data": {
+      "breakLineOnEnd": true,
       "level": 2,
       "value": "Heading 2",
     },
@@ -1962,6 +1967,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 4,
     "data": {
+      "breakLineOnEnd": true,
       "level": 3,
       "value": "Heading 3",
     },
@@ -1978,6 +1984,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 6,
     "data": {
+      "breakLineOnEnd": true,
       "level": 4,
       "value": "Heading 4",
     },
@@ -1994,6 +2001,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 8,
     "data": {
+      "breakLineOnEnd": true,
       "level": 5,
       "value": "Heading 5",
     },
@@ -2010,6 +2018,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 10,
     "data": {
+      "breakLineOnEnd": false,
       "level": 6,
       "value": "Heading 6",
     },

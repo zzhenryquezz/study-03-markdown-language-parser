@@ -1,4 +1,4 @@
-import { TokenType } from "@/lexer/Token";
+import Token, { TokenType } from "@/lexer/Token";
 import MarkdownNode, { MarkdownNodeType } from "../MarkdownNode";
 import type MarkdownTokenProcessor from "../MarkdownTokenProcessor";
 
@@ -22,5 +22,13 @@ export default class BreakLineProcessor implements MarkdownTokenProcessor {
         tokens.shift()        
 
         return true
+    }
+
+    public reverse: MarkdownTokenProcessor["reverse"] = (node) => {
+        if (node.type !== MarkdownNodeType.BreakLine) return []
+
+        return [
+            Token.from(TokenType.BreakLine, "\n")
+        ]
     }
 }

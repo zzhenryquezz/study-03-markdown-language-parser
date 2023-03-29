@@ -1,4 +1,4 @@
-import { TokenType } from "@/lexer/Token";
+import Token, { TokenType } from "@/lexer/Token";
 import type MainNode from "@/parser-main/MainNode";
 import MainParser from "@/parser-main/MainParser";
 import type MarkdownNode from "./MarkdownNode";
@@ -27,12 +27,17 @@ export default class MarkdonwParser extends MainParser {
     public tokenProcessors: MarkdownTokenProcessor[] = tokenProcessors
     public nodeProcessors: MarkdownNodeProcessor[] = nodeProcessors
 
-    public processMainNode(token: MainNode) {
-        const tokens = token.tokens.slice()
-        const markdownNodes: MarkdownNode[] = []
+    constructor(public tokens: Token[] = []) {
+        super(tokens)
 
         this.tokenProcessors.sort((a, b) => a.order - b.order)
         this.nodeProcessors.sort((a, b) => a.order - b.order)
+    }
+
+
+    public processMainNode(token: MainNode) {
+        const tokens = token.tokens.slice()
+        const markdownNodes: MarkdownNode[] = []        
 
         while (tokens.length) {
             const current = tokens[0]
@@ -59,13 +64,46 @@ export default class MarkdonwParser extends MainParser {
     public toMarkdownNodes(){
 
         const nodes = this.toNodes()
-
-        this.nodeProcessors.sort((a, b) => a.order - b.order)
         
         const markdownNodes = nodes.reduce<MarkdownNode[]>((r, n) => r.concat(this.processMainNode(n)), [])
 
         return markdownNodes
+    }
 
+    public convertMarkdownNodesToMainNodes(nodes: MarkdownNode[]) {
+        this.nodeProcessors.sort((a, b) => a.order - b.order)
+
+        const revertedByNodeProcessor = this.nodeProcessors.reduce((r, p) => p.reverse(r), nodes)
+        
+        const tokens: Token[] = []
+
+        for (let i = 0; i < revertedByNodeProcessor.length; i++) {
+            const current = revertedByNodeProcessor[i]
+
+            const processor = this.tokenProcessors
+                .filter((p) => p.reverse)
+                .find((p) => p.reverse(current).length)
+
+            if (!processor) {
+                console.log('[markdown-parser] unhandled node', current.type)
+                continue
+            }
+
+            const result = processor.reverse(current)
+
+            tokens.push(...result)
+
+        }
+
+        tokens.push(Token.from(TokenType.EndOfFile, ''))
+
+        return new MainParser(tokens).toNodes()
+    }
+
+    public convertMarkdownNodesToText(nodes: MarkdownNode[]) {
+        const mainNodes = this.convertMarkdownNodesToMainNodes(nodes)
+
+        return mainNodes.map(n => n.content).join('')
     }
 
 }

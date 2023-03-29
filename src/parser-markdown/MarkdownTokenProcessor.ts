@@ -9,7 +9,13 @@ interface Options {
     markdownNodes: MarkdownNode[]
 }
 
+interface ReverserResult {
+    _parentId: number
+    content: string
+}
+
 export default interface MarkdownTokenProcessor {
     order: number
     process: (options: Options) => boolean
+    reverse: (node: MarkdownNode) => Token[]
 }
