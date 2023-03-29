@@ -12,27 +12,44 @@ const model = computed({
     set: (value) => update(value)
 });
 
-// level
+// text
 const level = ref(1)
 const text = ref('')
+const el = ref<HTMLElement>()
 
 const tag = computed(() => `h${level.value}`)
 
 function setText() {
+
+    if (text.value === model.value.data.value) return;
+
+    if (el.value?.innerText === model.value.data.value) return;
+
     text.value = model.value.data.value;
 }
 
 function setLevel() {
+    if (level.value === model.value.data.level) return;
+
     level.value = model.value.data.level;
 }
 
-watch(model, setText, { immediate: true });
-watch(model, setLevel, { immediate: true });
+watch(() => model.value.data.value, setText, { immediate: true });
+watch(() => model.value.data.level, setLevel, { immediate: true });
+
+
+// update
+
+function onUpdate() {
+    model.value.data.value = el.value?.innerText || '';
+
+    model.value = { ...model.value };
+}
 
 
 </script>
 <template>
-    <component :is="tag" >
+    <component ref="el" :is="tag" contenteditable="true" @input="onUpdate" class="focus:outline-none" @keydown.enter.prevent>
         {{ text }}
     </component>
 </template>

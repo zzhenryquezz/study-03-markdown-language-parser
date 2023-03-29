@@ -7,7 +7,8 @@ import EditorMarkdown from './components/Markdown/Editor.vue';
 import type MainNode from './parser-main/MainNode';
 import MainParser from './parser-main/MainParser';
 
-import Content from '@/tests/fixtures/heading.03.md?raw'
+import Content from '@/tests/fixtures/content.01.md?raw'
+import { provideEditor } from './composables/editor';
 
 // text
 
@@ -17,24 +18,27 @@ const text = ref(Content);
 const parser = new MainParser();
 const nodes = ref<MainNode[]>([])
 
-function setNodes() {
-  parser.setTokensByText(text.value);
+const editor = provideEditor()
 
-  nodes.value = parser.toNodes();
+function onEditorTextUpdate(value: string){
+  editor.updateFromText(value)
 }
 
-watch(text, setNodes, { immediate: true });
+onMounted(() => {
+  editor.updateFromText(Content)
+})
+
 
 </script>
 <template>
   <div class="h-screen w-screen flex overflow-hidden" >
 
     <div class="w-6/12 bg-black" >
-      <EditorText v-model="text" />
+      <EditorText  />
     </div>
     
-    <div class="w-6/12 bg-red-500" >
-      <EditorMarkdown :model-value="nodes"  />
+    <div class="w-6/12 bg-teal-500" >
+      <EditorMarkdown :model-value="editor.nodes"  />
     </div>
 
   </div>

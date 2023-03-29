@@ -6,6 +6,9 @@ export default class ParagraphProcessor implements MarkdownNodeProcessor {
     public order = 90
 
     public isStartParagraph(node: MarkdownNode) {
+
+        if (!node) return false
+
         if (node.type === MarkdownNodeType.Word) return true
 
         return false

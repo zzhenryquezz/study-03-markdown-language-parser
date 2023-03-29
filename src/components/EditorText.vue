@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import { useEditor } from '@/composables/editor';
 import { computed } from 'vue';
 
-const modelValue = defineProp<string>('modelValue')
-const update = defineEmit('update:modelValue')
+const editor = useEditor()
 
-const model = computed({
-    get: () => modelValue.value,
-    set: (value) => update(value)
+const text = computed({
+    get: () => editor.toText(),
+    set: (value) => editor.updateFromText(value)
 });
 
 </script>
 <template>
-    <textarea class="w-full min-h-full p-4 bg-black text-white" v-model="model"></textarea>
+    <textarea
+        class="w-full min-h-full p-4 bg-black text-white" 
+        v-model="text"       
+    />
 </template>
