@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { useEditor } from '@/composables/editor'
-import type MainNode from '@/parser-main/MainNode'
 import type MarkdownNode from '@/parser-markdown/MarkdownNode'
 import MarkdonwParser from '@/parser-markdown/MarkdownParser'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 
 import NodeHeading from './NodeHeading.vue'
 import NodeParagraph from './NodeParagraph.vue'

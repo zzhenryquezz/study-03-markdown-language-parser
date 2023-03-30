@@ -1,6 +1,6 @@
 import type MainNode from '@/parser-main/MainNode'
 import MarkdonwParser from '@/parser-markdown/MarkdownParser'
-import { inject, provide, reactive, ref } from 'vue'
+import { inject, provide, reactive, ref, type UnwrapRef } from 'vue'
 
 export function createEditor() {
   const original = ref('')
@@ -28,8 +28,8 @@ export function createEditor() {
   }
 
   return reactive({
-    original,
-    nodes,
+    original: original as any as UnwrapRef<typeof original>,
+    nodes: nodes as any as UnwrapRef<typeof nodes>,
     toText,
     updateFromText,
     updateFromNodes
