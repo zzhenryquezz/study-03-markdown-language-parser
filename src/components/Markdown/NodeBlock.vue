@@ -2,10 +2,8 @@
 import { computed, onMounted, ref } from 'vue'
 
 import { onClickOutside } from '@vueuse/core'
-import type MarkdownNode from '@/parser-markdown/MarkdownNode'
-import { useEditor } from '@/composables/editor'
-import MarkdonwParser from '@/parser-markdown/MarkdownParser'
 import { MarkdownNodeType } from '@/parser-markdown/MarkdownNode'
+import { useMdBlocks } from '@/composables/md-blocks'
 
 // Menu
 const show = ref(false)
@@ -37,31 +35,19 @@ onClickOutside(menuRef, () => {
   show.value = false
 })
 
-// editor
-const block = defineProp<MarkdownNode>('block', {
-  required: true
-})
+function destroyNode() {
+  mdBlocks.destroyBlock(mdIndex.value)
+}
 
+// blocks
 const mdIndex = defineProp<number>('mdIndex', {
   required: true
 })
 
-const editor = useEditor()
+const mdBlocks = useMdBlocks()
 
-function destroyNode() {
-  const newNodes = editor.nodes.filter((n) => n._id !== block.value._parentId)
-
-  editor.updateFromNodes(newNodes)
-}
-
-function addNextNode() {
-  const parser = new MarkdonwParser()
-
-  parser.setTokensByNodes(editor.nodes)
-
-  const markdownNodes = parser.toMarkdownNodes()
-
-  markdownNodes.splice(mdIndex.value + 1, 0, {
+function addBlockBelow() {
+  mdBlocks.addBlock(mdIndex.value + 1, {
     type: MarkdownNodeType.BreakLine,
     _parentId: -1,
     data: {
@@ -69,18 +55,12 @@ function addNextNode() {
     }
   })
 
-  const newNodes = parser.convertMarkdownNodesToMainNodes(markdownNodes)
-
-  editor.updateFromNodes(newNodes)
-
   show.value = false
 }
-
-defineExpose({ show, addNextNode })
 </script>
 
 <template>
-  <div class="w-full flex items-center group group" :data-main-block-id="block._parentId">
+  <div class="w-full flex items-center group group">
     <div class="w-8 flex justify-center opacity-0 group-hover:opacity-100">
       <button ref="btnRef" @click="onShow" class="hover:bg-black/10 p-[2px] rounded text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -99,7 +79,7 @@ defineExpose({ show, addNextNode })
           :style="style"
         >
           <list-item @click="destroyNode">Delete</list-item>
-          <list-item @click="addNextNode">New block bellow</list-item>
+          <list-item @click="addBlockBelow">New block bellow</list-item>
 
           <slot name="actions" />
         </div>

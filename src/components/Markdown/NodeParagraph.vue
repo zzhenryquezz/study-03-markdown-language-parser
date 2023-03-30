@@ -1,80 +1,21 @@
 <script setup lang="ts">
-import type MarkdownNode from '@/parser-markdown/MarkdownNode'
-import MarkdonwParser from '@/parser-markdown/MarkdownParser'
-import { computed, onMounted, ref, watch } from 'vue'
-
+import { ref, watch } from 'vue'
 import debounce from 'lodash/debounce'
 
-import NodeBlock from './NodeBlock.vue'
+import type MarkdownNode from '@/parser-markdown/MarkdownNode'
+import MarkdonwParser from '@/parser-markdown/MarkdownParser'
+
 import { MarkdownNodeType } from '@/parser-markdown/MarkdownNode'
+import { useMdBlock, useMdBlocks } from '@/composables/md-blocks'
 
-// model
-const modelValue = defineProp<MarkdownNode>('modelValue')
-const update = defineEmit('update:modelValue')
+// current block
+const el = ref<HTMLElement>()
 
-const model = computed({
-  get: () => modelValue.value,
-  set: (value) => update(value)
+const mdIndex = defineProp<number>('mdIndex', {
+  required: true
 })
 
-// text
-const el = ref<HTMLElement>()
-const text = ref('')
-
-function mountText(children?: MarkdownNode[]) {
-  if (!children) return ''
-
-  return children.map((c) => c.data.value).join('')
-}
-
-const setText = debounce(() => {
-  const currentText = mountText(model.value.data.children)
-  const html = (el.value?.innerText || '') + '\n'
-
-  if (html.trim() === currentText.trim()) return
-
-  text.value = mountText(model.value.data.children).trim()
-
-  if (el.value?.innerText === text.value) return
-
-  el.value!.innerText = text.value
-}, 100)
-
-watch(model, setText, { immediate: true })
-
-// update
-
-function trasnformToBreakLine() {
-  model.value = {
-    _parentId: model.value._parentId,
-    type: MarkdownNodeType.BreakLine,
-    data: {
-      children: []
-    }
-  }
-}
-
-function trasnformToParagraph(children: MarkdownNode[]) {
-  const last = children[children.length - 1]
-
-  if (last.type !== MarkdownNodeType.BreakLine) {
-    children.push({
-      _parentId: model.value._parentId,
-      type: MarkdownNodeType.BreakLine,
-      data: {
-        value: '\n'
-      }
-    })
-  }
-
-  model.value = {
-    _parentId: model.value._parentId,
-    type: MarkdownNodeType.Paragraph,
-    data: {
-      children
-    }
-  }
-}
+const mdBlock = useMdBlock(mdIndex.value)
 
 function onUpdate() {
   const parser = new MarkdonwParser()
@@ -85,44 +26,81 @@ function onUpdate() {
 
   const [node] = parser.toMarkdownNodes()
 
-  if (!node || !node.data) {
-    trasnformToBreakLine()
-    return
+  const children = node?.data?.children || []
+
+  const last = children[children.length - 1]
+
+  if (last?.type !== MarkdownNodeType.BreakLine) {
+    children.push({
+      _parentId: mdBlock.value!._parentId,
+      type: MarkdownNodeType.BreakLine,
+      data: {
+        value: '\n'
+      }
+    })
   }
 
-  if (!node.data.children || !node.data.children.length) {
-    trasnformToBreakLine()
-    return
+  const payload = {
+    type: MarkdownNodeType.Paragraph,
+    data: { children }
   }
 
-  trasnformToParagraph(node.data.children)
+  mdBlock.update(payload)
 }
 
-// editor actions
-const blockRef = ref<InstanceType<typeof NodeBlock>>()
+mdBlock.setFocusMethod(() => el.value?.focus())
 
-const mdIndex = defineProp<number>('mdIndex', {
-  required: true
-})
+// all blocks
 
-onMounted(() => {
-  if (!el.value) return
+const mdBlocks = useMdBlocks()
 
-  if (!model.value.data.autofocus) return
+function addBlockBellow() {
+  mdBlocks.addEmptyBlock(mdIndex.value + 1, true)
+}
 
-  el.value.focus()
-})
+function destroyBlock() {
+  const htmlElText = el.value?.innerText || ''
+
+  if (htmlElText.length) return
+
+  mdBlocks.destroyBlock(mdIndex.value)
+}
+
+// text
+const text = ref('')
+
+function mountText(children?: MarkdownNode[]) {
+  if (!children) return ''
+
+  return children.map((c) => c.data.value).join('')
+}
+
+const setText = debounce(() => {
+  const blockText = mountText(mdBlock.value?.data.children)
+  const htmlElText = (el.value?.innerText || '') + '\n'
+
+  if (htmlElText.trim() === blockText.trim()) return
+
+  text.value = blockText.trim()
+
+  if (el.value) {
+    el.value.innerText = text.value
+  }
+}, 100)
+
+watch(() => mdBlock.value, setText, { immediate: true })
+
+// update
 </script>
 <template>
-  <node-block ref="blockRef" :block="model" :md-index="mdIndex">
-    <p
-      ref="el"
-      contenteditable
-      @input="onUpdate"
-      class="focus:outline-none w-full"
-      @keydown.enter.prevent
-    >
-      {{ text }}
-    </p>
-  </node-block>
+  <p
+    ref="el"
+    contenteditable
+    @input="onUpdate"
+    class="focus:outline-none w-full"
+    @keydown.enter.prevent="addBlockBellow"
+    @keydown.backspace="destroyBlock"
+  >
+    {{ text }}
+  </p>
 </template>

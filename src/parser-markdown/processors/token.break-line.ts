@@ -15,9 +15,17 @@ export default class BreakLineProcessor implements MarkdownTokenProcessor {
 
     const node = new MarkdownNode({
       _parentId: mainNode._id,
-      type: MarkdownNodeType.BreakLine,
+      type: MarkdownNodeType.Paragraph,
       data: {
-        value: '\n'
+        children: [
+          new MarkdownNode({
+            _parentId: mainNode._id,
+            type: MarkdownNodeType.BreakLine,
+            data: {
+              value: '\n'
+            }
+          })
+        ]
       }
     })
 
