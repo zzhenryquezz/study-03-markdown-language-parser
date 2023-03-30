@@ -13,16 +13,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  overwrites: [
-    {
-      files: ['*.vue'],
-      settings: {
-        'import/resolver': {
-          typescript: {
-            project: './tsconfig.app.json'
-          }
-        }
-      }
-    }
-  ]
+  rules: {
+    'no-undef': 'off'
+  }
 }
