@@ -30,10 +30,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
         MarkdownNode {
           "_parentId": 0,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 0,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -42,10 +50,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
   MarkdownNode {
     "_parentId": 1,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 2,
@@ -201,10 +217,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
         MarkdownNode {
           "_parentId": 2,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -213,10 +237,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
   MarkdownNode {
     "_parentId": 3,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 4,
@@ -316,10 +348,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
         MarkdownNode {
           "_parentId": 4,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -328,10 +368,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01
   MarkdownNode {
     "_parentId": 5,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 6,
@@ -462,10 +510,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 1,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 2,
@@ -747,10 +803,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
         MarkdownNode {
           "_parentId": 2,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -759,10 +823,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 3,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 4,
@@ -939,10 +1011,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
         MarkdownNode {
           "_parentId": 4,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -951,10 +1031,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 5,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 6,
@@ -1110,10 +1198,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
         MarkdownNode {
           "_parentId": 6,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 6,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -1122,10 +1218,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 7,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 8,
@@ -1281,10 +1385,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
         MarkdownNode {
           "_parentId": 8,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 8,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -1293,10 +1405,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 9,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 10,
@@ -1564,10 +1684,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
         MarkdownNode {
           "_parentId": 10,
           "data": {
-            "value": "
+            "children": [
+              MarkdownNode {
+                "_parentId": 10,
+                "data": {
+                  "value": "
 ",
+                },
+                "type": "BreakLine",
+              },
+            ],
           },
-          "type": "BreakLine",
+          "type": "Paragraph",
         },
       ],
     },
@@ -1576,10 +1704,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 11,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 12,
@@ -1942,10 +2078,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 1,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 2,
@@ -1959,10 +2103,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 3,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 4,
@@ -1976,10 +2128,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 5,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 6,
@@ -1993,10 +2153,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 7,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 8,
@@ -2010,10 +2178,18 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 9,
     "data": {
-      "value": "
+      "children": [
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "
 ",
+          },
+          "type": "BreakLine",
+        },
+      ],
     },
-    "type": "BreakLine",
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 10,

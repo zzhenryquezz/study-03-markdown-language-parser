@@ -37,8 +37,26 @@ export default class BreakLineProcessor implements MarkdownTokenProcessor {
   }
 
   public reverse: MarkdownTokenProcessor['reverse'] = (node) => {
-    if (node.type !== MarkdownNodeType.BreakLine) return []
+    const isBreakLine = [MarkdownNodeType.BreakLine, MarkdownNodeType.Paragraph].includes(
+      node.type as any
+    )
 
-    return [Token.from(TokenType.BreakLine, '\n')]
+    if (!isBreakLine) return []
+
+    if (node.type === MarkdownNodeType.BreakLine) {
+      return [Token.from(TokenType.BreakLine, '\n')]
+    }
+
+    if (node.data.children.length > 1) {
+      return []
+    }
+
+    const child = node.data.children[0]
+
+    if (child.type === MarkdownNodeType.BreakLine) {
+      return [Token.from(TokenType.BreakLine, '\n')]
+    }
+
+    return []
   }
 }

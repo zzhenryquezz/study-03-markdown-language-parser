@@ -30,12 +30,22 @@ function onUpdate() {
 
   const last = children[children.length - 1]
 
-  if (last?.type !== MarkdownNodeType.BreakLine) {
+  if (last && last?.type !== MarkdownNodeType.BreakLine) {
     children.push({
       _parentId: mdBlock.value!._parentId,
       type: MarkdownNodeType.BreakLine,
       data: {
         value: '\n'
+      }
+    })
+  }
+
+  if (!last && !children.length) {
+    children.push({
+      _parentId: mdBlock.value!._parentId,
+      type: MarkdownNodeType.Word,
+      data: {
+        value: ''
       }
     })
   }
@@ -77,7 +87,7 @@ function mountText(children?: MarkdownNode[]) {
 
 const setText = debounce(() => {
   const blockText = mountText(mdBlock.value?.data.children)
-  const htmlElText = (el.value?.innerText || '') + '\n'
+  const htmlElText = el.value?.innerText || ''
 
   if (htmlElText.trim() === blockText.trim()) return
 
@@ -86,7 +96,7 @@ const setText = debounce(() => {
   if (el.value) {
     el.value.innerText = text.value
   }
-}, 100)
+}, 50)
 
 watch(() => mdBlock.value, setText, { immediate: true })
 
