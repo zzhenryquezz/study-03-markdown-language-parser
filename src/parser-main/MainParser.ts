@@ -1,83 +1,77 @@
-import Lexer from "@/lexer/Lexer";
-import type Token from "../lexer/Token";
-import { TokenType } from "../lexer/Token";
-import MainNode, { type TokenWithPosition } from "./MainNode";
+import Lexer from '@/lexer/Lexer'
+import type Token from '../lexer/Token'
+import { TokenType } from '../lexer/Token'
+import MainNode, { type TokenWithPosition } from './MainNode'
 
 export default class MainParser {
-    constructor(public tokens: Token[] = []) {}
+  constructor(public tokens: Token[] = []) {}
 
+  public setTokens(tokens: Token[]) {
+    this.tokens = tokens
+  }
 
-    public setTokens(tokens: Token[]) {
-        this.tokens = tokens
-    }
+  public setTokensByText(text: string) {
+    const lexer = new Lexer()
 
-    public setTokensByText(text: string) {
-        const lexer = new Lexer()
-        
-        this.tokens = lexer.tokenize(text)
-    }
+    this.tokens = lexer.tokenize(text)
+  }
 
-    public setTokensByNodes(nodes: MainNode[]) {
-        this.tokens = nodes.map(n => n.tokens).flat()
-    }
+  public setTokensByNodes(nodes: MainNode[]) {
+    this.tokens = nodes.map((n) => n.tokens).flat()
+  }
 
-    public toText() {
-        return this.tokens.map(t => t.value).join('')
-    }
+  public toText() {
+    return this.tokens.map((t) => t.value).join('')
+  }
 
-    public toNodes() {
+  public toNodes() {
+    let currentStart = 0
 
-        let currentStart = 0
+    const tokens = this.tokens.slice().map((t) => {
+      const position = {
+        start: currentStart,
+        end: currentStart + t.value.length
+      }
 
-        const tokens = this.tokens.slice().map(t => { 
+      currentStart = position.end
 
-            const position =  {
-                start: currentStart,
-                end: currentStart + t.value.length
-            }
+      return { ...t, position }
+    })
 
-            currentStart = position.end
+    const nodes: MainNode[] = []
 
-            return { ...t, position }
-            
-        })
+    let id = 0
+    const children: TokenWithPosition[] = []
 
-        const nodes: MainNode[] = []
+    for (let i = 0; i < tokens.length; i++) {
+      const token = tokens[i]
 
-        let id = 0
-        const children: TokenWithPosition[] = []
+      children.push(token)
 
-        for (let i = 0; i < tokens.length; i++) {
-            const token = tokens[i]
+      const isEnd = [TokenType.BreakLine, TokenType.EndOfFile].includes(token.type)
 
-            
-            children.push(token)
+      if (!isEnd) continue
 
-            const isEnd  = [TokenType.BreakLine, TokenType.EndOfFile].includes(token.type)
-            
-            if (!isEnd) continue
+      const first = children[0]
+      const last = children[children.length - 1]
+      const content = children.map((c) => c.value).join('')
 
-            const first = children[0]
-            const last = children[children.length - 1]    
-            const content = children.map(c => c.value).join('')
-
-            const node = MainNode.from({
-                _id: id,
-                content,
-                tokens: children.slice(),
-                position: {
-                    start: first ? first.position.start : token.position.start,
-                    end: last ? last.position.end : token.position.end
-                }
-            })
-
-            nodes.push(node)
-
-            children.length = 0
-            id++
-    
+      const node = MainNode.from({
+        _id: id,
+        content,
+        tokens: children.slice(),
+        position: {
+          start: first ? first.position.start : token.position.start,
+          end: last ? last.position.end : token.position.end
         }
+      })
 
-        return nodes
+      nodes.push(node)
+
+      children.length = 0
+      id++
     }
+
+    return nodes
+  }
 }
