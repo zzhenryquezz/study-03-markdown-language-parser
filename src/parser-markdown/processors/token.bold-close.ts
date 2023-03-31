@@ -1,6 +1,6 @@
 import Token, { TokenType } from '@/lexer/Token'
 import MainNode from '@/parser-main/MainNode'
-import MarkdownNode from '../MarkdownNode'
+import MarkdownNode, { MarkdownNodeType } from '../MarkdownNode'
 import type MarkdownTokenProcessor from '../MarkdownTokenProcessor'
 
 export default class CloseBoldProcessor implements MarkdownTokenProcessor {
@@ -21,14 +21,13 @@ export default class CloseBoldProcessor implements MarkdownTokenProcessor {
     const hasOpen = markdownNodes
       .slice()
       .reverse()
-      .find((n) => n.type === 'OpenBold')
+      .find((n) => n.type === MarkdownNodeType.OpenBold)
 
     if (!hasOpen) return false
 
     const node = new MarkdownNode({
       _parentId: mainNode._id,
-      //  _parent: mainNode,
-      type: 'CloseBold',
+      type: MarkdownNodeType.CloseBold,
       data: {
         value: '**'
       }

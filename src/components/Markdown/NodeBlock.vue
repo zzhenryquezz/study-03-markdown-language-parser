@@ -3,7 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 
 import { onClickOutside } from '@vueuse/core'
 import { MarkdownNodeType } from '@/parser-markdown/MarkdownNode'
-import { useMdBlocks } from '@/composables/md-blocks'
+import { useMdBlock, useMdBlocks } from '@/composables/md-blocks'
 
 // Menu
 const show = ref(false)
@@ -45,6 +45,7 @@ const mdIndex = defineProp<number>('mdIndex', {
 })
 
 const mdBlocks = useMdBlocks()
+const mdBlock = useMdBlock(mdIndex.value)
 
 function addBlockBelow() {
   mdBlocks.addBlock(mdIndex.value + 1, {
@@ -60,7 +61,11 @@ function addBlockBelow() {
 </script>
 
 <template>
-  <div class="w-full flex items-center group group">
+  <section
+    class="w-full flex items-center group group"
+    :data-type="mdBlock.value?.type"
+    :data-index="mdIndex"
+  >
     <div class="w-8 flex justify-center opacity-0 group-hover:opacity-100">
       <button ref="btnRef" @click="onShow" class="hover:bg-black/10 p-[2px] rounded text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -86,5 +91,5 @@ function addBlockBelow() {
       </teleport>
     </div>
     <slot />
-  </div>
+  </section>
 </template>

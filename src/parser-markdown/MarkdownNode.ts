@@ -3,13 +3,17 @@ export enum MarkdownNodeType {
   Heading = 'Heading',
   BreakLine = 'BreakLine',
   Paragraph = 'Paragraph',
-  WhiteSpace = 'WhiteSpace'
+  WhiteSpace = 'WhiteSpace',
+  OpenHTMLTag = 'OpenHTMLTag',
+  CloseHTMLTag = 'CloseHTMLTag',
+  OpenBold = 'OpenBold',
+  CloseBold = 'CloseBold'
 }
 
 export default class MarkdownNode<D = undefined | any> {
   public _parentId: number
 
-  public type: string
+  public type: MarkdownNodeType
   public data?: D
 
   constructor(props: MarkdownNode) {

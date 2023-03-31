@@ -1,5 +1,5 @@
 import Token from '@/lexer/Token'
-import MarkdownNode from '../MarkdownNode'
+import MarkdownNode, { MarkdownNodeType } from '../MarkdownNode'
 import type MarkdownTokenProcessor from '../MarkdownTokenProcessor'
 
 export default class HeadingProcessor implements MarkdownTokenProcessor {
@@ -17,7 +17,7 @@ export default class HeadingProcessor implements MarkdownTokenProcessor {
 
     const node = new MarkdownNode({
       _parentId: mainNode._id,
-      type: 'Heading',
+      type: MarkdownNodeType.Heading,
       data: {
         breakLineOnEnd: raw.endsWith('\n'),
         level,

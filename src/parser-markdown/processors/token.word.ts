@@ -1,5 +1,5 @@
 import Token, { TokenType } from '@/lexer/Token'
-import MarkdownNode from '../MarkdownNode'
+import MarkdownNode, { MarkdownNodeType } from '../MarkdownNode'
 import type MarkdownTokenProcessor from '../MarkdownTokenProcessor'
 
 export default class WordProcessor implements MarkdownTokenProcessor {
@@ -15,8 +15,7 @@ export default class WordProcessor implements MarkdownTokenProcessor {
 
     const node = new MarkdownNode({
       _parentId: mainNode._id,
-      //  _parent: mainNode,
-      type: 'Word',
+      type: MarkdownNodeType.Word,
       data: {
         value: current.value
       }
