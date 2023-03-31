@@ -4,7 +4,7 @@
 
 Markdown language parser
 
-[Demo](https://zzhenryquezz.github.io/study-vue-modules-architecture/)
+[Demo](https://zzhenryquezz.github.io/study-03-markdown-language-parser/)
 
 </div>
 
