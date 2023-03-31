@@ -33,7 +33,7 @@ watch(selected, (name) => {
   editor.updateFromText(option.value)
 })
 
-selected.value = options[2].name
+selected.value = options[1].name
 </script>
 <template>
   <div class="h-screen w-screen flex overflow-hidden">

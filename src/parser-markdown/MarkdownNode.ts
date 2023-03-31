@@ -4,8 +4,6 @@ export enum MarkdownNodeType {
   BreakLine = 'BreakLine',
   Paragraph = 'Paragraph',
   WhiteSpace = 'WhiteSpace',
-  OpenHTMLTag = 'OpenHTMLTag',
-  CloseHTMLTag = 'CloseHTMLTag',
   OpenBold = 'OpenBold',
   CloseBold = 'CloseBold'
 }

@@ -10,8 +10,6 @@ export default class ParagraphProcessor implements MarkdownNodeProcessor {
 
     if (node.type === MarkdownNodeType.Word) return true
 
-    if (node.type === MarkdownNodeType.OpenHTMLTag) return true
-
     return false
   }
 

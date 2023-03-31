@@ -1,1 +1,0 @@
-Hello <b>Will Smith</b>
