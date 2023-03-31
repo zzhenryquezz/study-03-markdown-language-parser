@@ -876,98 +876,114 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/component.01.
           },
           "type": "Paragraph",
         },
+      ],
+    },
+    "type": "ComponentBlock",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "children": [
         MarkdownNode {
           "_parentId": 12,
           "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 12,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "console",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "log",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "end",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "sum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "children": [
         MarkdownNode {
           "_parentId": 13,
           "data": {
-            "value": "    ",
+            "value": "
+",
           },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "console",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "log",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "(",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "'",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "end",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "sum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": "'",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "value": ")",
-          },
-          "type": "Word",
+          "type": "BreakLine",
         },
       ],
     },
@@ -1756,6 +1772,22 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/component.02.
       "value": ")",
     },
     "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
   },
 ]
 `;
@@ -4893,25 +4925,25 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/setup.01.md 1
           },
           "type": "Paragraph",
         },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 10,
-                "data": {
-                  "value": "
-",
-                },
-                "type": "BreakLine",
-              },
-            ],
-          },
-          "type": "Paragraph",
-        },
       ],
     },
     "type": "SetupBlock",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 11,
@@ -5720,25 +5752,25 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/setup.02.md 1
           },
           "type": "Paragraph",
         },
-        MarkdownNode {
-          "_parentId": 13,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 13,
-                "data": {
-                  "value": "
-",
-                },
-                "type": "BreakLine",
-              },
-            ],
-          },
-          "type": "Paragraph",
-        },
       ],
     },
     "type": "SetupBlock",
+  },
+  MarkdownNode {
+    "_parentId": 13,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
   },
   MarkdownNode {
     "_parentId": 14,

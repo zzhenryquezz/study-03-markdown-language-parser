@@ -6,7 +6,8 @@ export enum MarkdownNodeType {
   WhiteSpace = 'WhiteSpace',
   OpenBold = 'OpenBold',
   CloseBold = 'CloseBold',
-  SetupBlock = 'SetupBlock'
+  SetupBlock = 'SetupBlock',
+  ComponentBlock = 'ComponentBlock'
 }
 
 export default class MarkdownNode<D = undefined | any> {

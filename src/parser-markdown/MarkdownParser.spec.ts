@@ -6,12 +6,18 @@ describe('parser-markdown', () => {
   const lexer = new Lexer()
   const parser = new MarkdonwParser()
 
+  const fixturesFilter = process.env.FIXTURES_FILTER
+
   const files = import.meta.glob('../tests/fixtures/*.md', {
     eager: true,
     as: 'raw'
   })
 
-  it.each(Object.entries(files))('should parse fixtures %s', (filename, content) => {
+  const entries = Object.entries(files).filter(
+    ([filename]) => !fixturesFilter || filename.includes(fixturesFilter)
+  )
+
+  it.each(entries)('should parse fixtures %s', (filename, content) => {
     const tokens = lexer.tokenize(content)
 
     parser.setTokens(tokens)
@@ -21,7 +27,7 @@ describe('parser-markdown', () => {
     expect(result).toMatchSnapshot()
   })
 
-  it.each(Object.entries(files))('should revert fixtures to text %s', (filename, payload) => {
+  it.each(entries)('should revert fixtures to text %s', (filename, payload) => {
     parser.setTokensByText(payload)
 
     const markdownNodes = parser.toMarkdownNodes()
