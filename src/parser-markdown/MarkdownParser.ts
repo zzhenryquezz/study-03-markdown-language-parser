@@ -57,7 +57,7 @@ export default class MarkdonwParser extends MainParser {
       tokens.shift()
     }
 
-    return this.nodeProcessors.reduce((r, p) => p.process(r), markdownNodes)
+    return markdownNodes
   }
 
   public toMarkdownNodes() {
@@ -68,12 +68,10 @@ export default class MarkdonwParser extends MainParser {
       []
     )
 
-    return markdownNodes
+    return this.nodeProcessors.reduce((r, p) => p.process(r), markdownNodes)
   }
 
   public convertMarkdownNodesToMainNodes(nodes: MarkdownNode[]) {
-    this.nodeProcessors.sort((a, b) => a.order - b.order)
-
     const revertedByNodeProcessor = this.nodeProcessors.reduce((r, p) => p.reverse(r), nodes)
 
     const tokens: Token[] = []

@@ -17,7 +17,7 @@ export default class WhiteSpaceProcessor implements MarkdownTokenProcessor {
       _parentId: mainNode._id,
       type: MarkdownNodeType.WhiteSpace,
       data: {
-        value: ' '
+        value: current.value
       }
     })
 
@@ -31,6 +31,6 @@ export default class WhiteSpaceProcessor implements MarkdownTokenProcessor {
   public reverse: MarkdownTokenProcessor['reverse'] = (node) => {
     if (node.type !== 'WhiteSpace') return []
 
-    return [Token.from(TokenType.WhiteSpace, ' ')]
+    return [Token.from(TokenType.WhiteSpace, node.data.value)]
   }
 }

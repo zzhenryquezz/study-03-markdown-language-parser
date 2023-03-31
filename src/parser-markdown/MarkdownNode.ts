@@ -5,7 +5,8 @@ export enum MarkdownNodeType {
   Paragraph = 'Paragraph',
   WhiteSpace = 'WhiteSpace',
   OpenBold = 'OpenBold',
-  CloseBold = 'CloseBold'
+  CloseBold = 'CloseBold',
+  SetupBlock = 'SetupBlock'
 }
 
 export default class MarkdownNode<D = undefined | any> {
@@ -18,5 +19,17 @@ export default class MarkdownNode<D = undefined | any> {
     this._parentId = props._parentId
     this.type = props.type
     this.data = props.data
+  }
+
+  public static isBreakLine(node: MarkdownNode) {
+    if (!node) return false
+
+    if (node.type === MarkdownNodeType.BreakLine) return true
+
+    if (node.type === MarkdownNodeType.Paragraph) {
+      return node.data.children[0]?.type === MarkdownNodeType.BreakLine
+    }
+
+    return false
   }
 }

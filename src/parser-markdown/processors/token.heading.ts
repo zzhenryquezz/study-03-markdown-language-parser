@@ -8,11 +8,14 @@ export default class HeadingProcessor implements MarkdownTokenProcessor {
   public process: MarkdownTokenProcessor['process'] = ({ mainNode, tokens, markdownNodes }) => {
     if (tokens[0].value !== '#') return false
 
+    if (tokens[1].type !== 'WhiteSpace') return false
+
     const level = tokens.filter((t) => t.value === '#').length
     const raw = tokens
       .slice(level)
       .map((t) => t.value)
       .join('')
+
     const value = raw.trim()
 
     const node = new MarkdownNode({

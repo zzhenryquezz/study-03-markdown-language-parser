@@ -1,18 +1,148 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`] = `
+exports[`lexer > should tokenize fixtures ../tests/fixtures/bold.01.md 1`] = `
 [
   Token {
-    "type": "Symbol",
-    "value": "[",
+    "type": "Word",
+    "value": "This",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Word",
-    "value": "code",
+    "value": "text",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "is",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Symbol",
-    "value": "]",
+    "value": "*",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "*",
+  },
+  Token {
+    "type": "Word",
+    "value": "bold",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "*",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "*",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/component.01.md 1`] = `
+[
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "script",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "block",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "import",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useBlock",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "app",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
   },
   Token {
     "type": "BreakLine",
@@ -23,6 +153,60 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
     "type": "BreakLine",
     "value": "
 ",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "block",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useBlock",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
   },
   Token {
     "type": "Word",
@@ -55,6 +239,10 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
   Token {
     "type": "Word",
     "value": "a",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Symbol",
@@ -119,6 +307,64 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
 ",
   },
   Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "console",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "log",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "begin",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
     "type": "Word",
     "value": "const",
   },
@@ -152,7 +398,7 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
   },
   Token {
     "type": "Word",
-    "value": "1",
+    "value": "5",
   },
   Token {
     "type": "Symbol",
@@ -164,7 +410,7 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
   },
   Token {
     "type": "Word",
-    "value": "2",
+    "value": "10",
   },
   Token {
     "type": "Symbol",
@@ -181,20 +427,86 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
 ",
   },
   Token {
-    "type": "Symbol",
-    "value": "[",
-  },
-  Token {
-    "type": "Symbol",
-    "value": "/",
+    "type": "WhiteSpace",
+    "value": "    ",
   },
   Token {
     "type": "Word",
-    "value": "code",
+    "value": "block",
   },
   Token {
     "type": "Symbol",
-    "value": "]",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "setText",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "result",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "console",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "log",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "end",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
   },
   Token {
     "type": "EndOfFile",
@@ -203,11 +515,20 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/block.code.01.md 1`]
 ]
 `;
 
-exports[`lexer > should tokenize fixtures ../tests/fixtures/bold.01.md 1`] = `
+exports[`lexer > should tokenize fixtures ../tests/fixtures/component.02.md 1`] = `
 [
   Token {
-    "type": "Word",
-    "value": "This",
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
   },
   Token {
     "type": "WhiteSpace",
@@ -215,7 +536,49 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/bold.01.md 1`] = `
   },
   Token {
     "type": "Word",
-    "value": "text",
+    "value": "v",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "script",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "import",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
   },
   Token {
     "type": "WhiteSpace",
@@ -223,7 +586,19 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/bold.01.md 1`] = `
   },
   Token {
     "type": "Word",
-    "value": "is",
+    "value": "useTable",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useCollection",
   },
   Token {
     "type": "WhiteSpace",
@@ -231,23 +606,779 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/bold.01.md 1`] = `
   },
   Token {
     "type": "Symbol",
-    "value": "*",
+    "value": "}",
   },
   Token {
-    "type": "Symbol",
-    "value": "*",
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Word",
-    "value": "bold",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Symbol",
-    "value": "*",
+    "value": "'",
   },
   Token {
     "type": "Symbol",
-    "value": "*",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "app",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useTable",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "colletion",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useCollection",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "todos",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "response",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "await",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "collection",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "findAll",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "console",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "log",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "Meta",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "response",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "meta",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    
+    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "setItems",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "response",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "data",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "EndOfFile",
+    "value": "",
+  },
+]
+`;
+
+exports[`lexer > should tokenize fixtures ../tests/fixtures/component.03.md 1`] = `
+[
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Component",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "with",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "script",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "v",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "script",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "color",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "\\"",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "fff",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "\\"",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "no",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "footer",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "import",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useTable",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useScript",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "app",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useTable",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "doneTodoScript",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useScript",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "done",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "todos",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "ts",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "response",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "await",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "doneTodoScript",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "execute",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    
+    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "table",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "setItems",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "response",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "data",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
     "type": "EndOfFile",
@@ -1386,39 +2517,259 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/heading.03.md 1`] = 
 ]
 `;
 
-exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.01.md 1`] = `
+exports[`lexer > should tokenize fixtures ../tests/fixtures/setup.01.md 1`] = `
 [
   Token {
     "type": "Symbol",
-    "value": "<",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Word",
-    "value": "b",
+    "value": "setup",
   },
   Token {
-    "type": "Symbol",
-    "value": ">",
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
-    "type": "Word",
-    "value": "Hello",
-  },
-  Token {
-    "type": "Symbol",
-    "value": "<",
-  },
-  Token {
-    "type": "Symbol",
-    "value": "/",
+    "type": "WhiteSpace",
+    "value": "    ",
   },
   Token {
     "type": "Word",
-    "value": "b",
+    "value": "import",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Symbol",
-    "value": ">",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "usePage",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "app",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "page",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "usePage",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "nani",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "page",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "        ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "setBodyColor",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "000",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "        ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "setPadding",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "0",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
     "type": "EndOfFile",
@@ -1427,11 +2778,36 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.01.md 1`]
 ]
 `;
 
-exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`] = `
+exports[`lexer > should tokenize fixtures ../tests/fixtures/setup.02.md 1`] = `
 [
   Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
     "type": "Word",
-    "value": "Hello",
+    "value": "setup",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "import",
   },
   Token {
     "type": "WhiteSpace",
@@ -1439,7 +2815,236 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
   },
   Token {
     "type": "Symbol",
-    "value": "<",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ref",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Word",
+    "value": "vue",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ref",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "0",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "b",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "ref",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Word",
+    "value": "1",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "computed",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ">",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Word",
@@ -1447,11 +3052,25 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
   },
   Token {
     "type": "Symbol",
-    "value": ">",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
   },
   Token {
     "type": "Word",
-    "value": "Will",
+    "value": "function",
   },
   Token {
     "type": "WhiteSpace",
@@ -1459,15 +3078,57 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
   },
   Token {
     "type": "Word",
-    "value": "Smith",
+    "value": "increment",
   },
   Token {
     "type": "Symbol",
-    "value": "<",
+    "value": "(",
   },
   Token {
     "type": "Symbol",
-    "value": "/",
+    "value": ")",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "        ",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "value",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "        ",
   },
   Token {
     "type": "Word",
@@ -1475,20 +3136,85 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.02.md 1`]
   },
   Token {
     "type": "Symbol",
-    "value": ">",
+    "value": ".",
   },
-  Token {
-    "type": "EndOfFile",
-    "value": "",
-  },
-]
-`;
-
-exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`] = `
-[
   Token {
     "type": "Word",
-    "value": "Hello",
+    "value": "value",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "Data",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "Sum",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
   },
   Token {
     "type": "WhiteSpace",
@@ -1496,79 +3222,449 @@ exports[`lexer > should tokenize fixtures ../tests/fixtures/html.tag.b.03.md 1`]
   },
   Token {
     "type": "Symbol",
-    "value": "<",
+    "value": "{",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "sum",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "A",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "a",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Word",
+    "value": "B",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
   },
   Token {
     "type": "Word",
     "value": "b",
   },
   Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ":",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "script",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "-",
+  },
+  Token {
+    "type": "Word",
+    "value": "btn",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "label",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "\\"",
+  },
+  Token {
+    "type": "Word",
+    "value": "Update",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "\\"",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    
+    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "import",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "{",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useBtn",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ",",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "usePage",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "}",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "from",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "#",
+  },
+  Token {
+    "type": "Word",
+    "value": "app",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "'",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "btn",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "useBtn",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "const",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "page",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Word",
+    "value": "usePage",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "BreakLine",
+    "value": "
+",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": "    ",
+  },
+  Token {
+    "type": "Word",
+    "value": "btn",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "onClick",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "(",
+  },
+  Token {
+    "type": "Symbol",
+    "value": ")",
+  },
+  Token {
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  Token {
+    "type": "Symbol",
+    "value": "=",
+  },
+  Token {
     "type": "Symbol",
     "value": ">",
   },
   Token {
-    "type": "Word",
-    "value": "Will",
-  },
-  Token {
     "type": "WhiteSpace",
     "value": " ",
   },
   Token {
     "type": "Word",
-    "value": "Smith",
+    "value": "page",
   },
   Token {
     "type": "Symbol",
-    "value": "<",
+    "value": ".",
+  },
+  Token {
+    "type": "Word",
+    "value": "increment",
   },
   Token {
     "type": "Symbol",
-    "value": "/",
-  },
-  Token {
-    "type": "Word",
-    "value": "b",
+    "value": "(",
   },
   Token {
     "type": "Symbol",
-    "value": ">",
+    "value": ")",
   },
   Token {
     "type": "Symbol",
-    "value": "\\\\",
+    "value": ")",
   },
   Token {
-    "type": "Word",
-    "value": "n",
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
-    "type": "WhiteSpace",
-    "value": " ",
-  },
-  Token {
-    "type": "Word",
-    "value": "How",
-  },
-  Token {
-    "type": "WhiteSpace",
-    "value": " ",
-  },
-  Token {
-    "type": "Word",
-    "value": "are",
-  },
-  Token {
-    "type": "WhiteSpace",
-    "value": " ",
-  },
-  Token {
-    "type": "Word",
-    "value": "you",
-  },
-  Token {
-    "type": "Symbol",
-    "value": "?",
+    "type": "BreakLine",
+    "value": "
+",
   },
   Token {
     "type": "EndOfFile",

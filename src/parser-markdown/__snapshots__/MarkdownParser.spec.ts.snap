@@ -1,425 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`parser-markdown > should parse fixtures ../tests/fixtures/block.code.01.md 1`] = `
-[
-  MarkdownNode {
-    "_parentId": 0,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "[",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "code",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "]",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 0,
-                "data": {
-                  "value": "
-",
-                },
-                "type": "BreakLine",
-              },
-            ],
-          },
-          "type": "Paragraph",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 1,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 1,
-          "data": {
-            "value": "
-",
-          },
-          "type": "BreakLine",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 2,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "const",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "sum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "=",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "(",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "a",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "b",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ")",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "=",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ">",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "a",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "+",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "b",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 2,
-                "data": {
-                  "value": "
-",
-                },
-                "type": "BreakLine",
-              },
-            ],
-          },
-          "type": "Paragraph",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 3,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 3,
-          "data": {
-            "value": "
-",
-          },
-          "type": "BreakLine",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 4,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "const",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "result",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "=",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "sum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "(",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "1",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "2",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": ")",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 4,
-                "data": {
-                  "value": "
-",
-                },
-                "type": "BreakLine",
-              },
-            ],
-          },
-          "type": "Paragraph",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 5,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 5,
-          "data": {
-            "value": "
-",
-          },
-          "type": "BreakLine",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-  MarkdownNode {
-    "_parentId": 6,
-    "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "[",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "/",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "code",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "]",
-          },
-          "type": "Word",
-        },
-      ],
-    },
-    "type": "Paragraph",
-  },
-]
-`;
-
 exports[`parser-markdown > should parse fixtures ../tests/fixtures/bold.01.md 1`] = `
 [
   MarkdownNode {
@@ -496,6 +76,2535 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/bold.01.md 1`
 ]
 `;
 
+exports[`parser-markdown > should parse fixtures ../tests/fixtures/component.01.md 1`] = `
+[
+  MarkdownNode {
+    "_parentId": 0,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "script",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "-",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "block",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 0,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "import",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "{",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "useBlock",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "}",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "from",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "app",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 1,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "block",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "useBlock",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 3,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "sum",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "a",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": ",",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "b",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": ">",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "a",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "b",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 5,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 6,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "console",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "log",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "begin",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "sum",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 7,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 8,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "result",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "sum",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "5",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ",",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "10",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 9,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 10,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "block",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "setText",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "result",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 11,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 12,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "console",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "log",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "end",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "sum",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+]
+`;
+
+exports[`parser-markdown > should parse fixtures ../tests/fixtures/component.02.md 1`] = `
+[
+  MarkdownNode {
+    "_parentId": 0,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": "v",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": "-",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": "table",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": "-",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "value": "script",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 1,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "import",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "useTable",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "useCollection",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "from",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "app",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 3,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "const",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "table",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "useTable",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 5,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "const",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "colletion",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "useCollection",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "todos",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 7,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "const",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "response",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "await",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "collection",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "findAll",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 9,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "console",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "log",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "Meta",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "response",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "meta",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "    
+    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "table",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "setItems",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "response",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": "data",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+]
+`;
+
+exports[`parser-markdown > should parse fixtures ../tests/fixtures/component.03.md 1`] = `
+[
+  MarkdownNode {
+    "_parentId": 0,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "breakLineOnEnd": true,
+            "level": 1,
+            "value": "Component with script",
+          },
+          "type": "Heading",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 1,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "v",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "-",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "table",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "-",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "value": "script",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "color",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "\\"",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "fff",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "\\"",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 3,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "no",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "-",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "footer",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 5,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "import",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "{",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "useTable",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": ",",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "useScript",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "}",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "from",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "app",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 6,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 7,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "table",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "useTable",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 8,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "doneTodoScript",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "useScript",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "done",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "-",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "todos",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "ts",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 9,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 10,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "response",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "await",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "doneTodoScript",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "execute",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 11,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "    
+    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "table",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "setItems",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "response",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": "data",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 12,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+]
+`;
+
 exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md 1`] = `
 [
   MarkdownNode {
@@ -526,295 +2635,287 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 2,
     "data": {
+      "value": "Lorem",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "ipsum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "dolor",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "sit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "amet",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "consectetur",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "adipiscing",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "elit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "Phasellus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "finibus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "turpis",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "eu",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "mauris",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "commodo",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "ac",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "porta",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "lacus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": "vehicula",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
       "children": [
         MarkdownNode {
           "_parentId": 2,
           "data": {
-            "value": "Lorem",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "ipsum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "dolor",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "sit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "amet",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "consectetur",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "adipiscing",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "elit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "Phasellus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "finibus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "turpis",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "eu",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "mauris",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "commodo",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "ac",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "porta",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "lacus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": "vehicula",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 2,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 2,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
       ],
     },
@@ -839,190 +2940,182 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 4,
     "data": {
+      "value": "Praesent",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "sed",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "leo",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "sapien",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "In",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "eu",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "aliquam",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "nunc",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "non",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "rutrum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "lectus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
       "children": [
         MarkdownNode {
           "_parentId": 4,
           "data": {
-            "value": "Praesent",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "sed",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "leo",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "sapien",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "In",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "eu",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "aliquam",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "nunc",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "non",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "rutrum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": "lectus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 4,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 4,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
       ],
     },
@@ -1047,169 +3140,161 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 6,
     "data": {
+      "value": "Cras",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "pharetra",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "velit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "odio",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "sit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "amet",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "sollicitudin",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "lorem",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "gravida",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "ut",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
       "children": [
         MarkdownNode {
           "_parentId": 6,
           "data": {
-            "value": "Cras",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "pharetra",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "velit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "odio",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "sit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "amet",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "sollicitudin",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "lorem",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "gravida",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": "ut",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 6,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 6,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
       ],
     },
@@ -1234,169 +3319,161 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 8,
     "data": {
+      "value": "Sed",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "non",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "sem",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "purus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "Donec",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "cursus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "at",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "elit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "vulputate",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "commodo",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
       "children": [
         MarkdownNode {
           "_parentId": 8,
           "data": {
-            "value": "Sed",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "non",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "sem",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "purus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "Donec",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "cursus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "at",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "elit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "vulputate",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": "commodo",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 8,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 8,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
       ],
     },
@@ -1421,281 +3498,273 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 10,
     "data": {
+      "value": "Curabitur",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "venenatis",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "justo",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "eu",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "risus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "maximus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "viverra",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "Morbi",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "ligula",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "magna",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "semper",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "nec",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "tincidunt",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "in",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "accumsan",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "non",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "nulla",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
       "children": [
         MarkdownNode {
           "_parentId": 10,
           "data": {
-            "value": "Curabitur",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "venenatis",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "justo",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "eu",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "risus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "maximus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "viverra",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "Morbi",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "ligula",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "magna",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "semper",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "nec",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "tincidunt",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "in",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "accumsan",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "non",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": "nulla",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 10,
-          "data": {
-            "children": [
-              MarkdownNode {
-                "_parentId": 10,
-                "data": {
-                  "value": "
+            "value": "
 ",
-                },
-                "type": "BreakLine",
-              },
-            ],
           },
-          "type": "Paragraph",
+          "type": "BreakLine",
         },
       ],
     },
@@ -1720,318 +3789,310 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/content.01.md
   MarkdownNode {
     "_parentId": 12,
     "data": {
-      "children": [
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "Etiam",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "ut",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "vehicula",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "ipsum",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "Vivamus",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "viverra",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "odio",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "eu",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "auctor",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "pharetra",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "Sed",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "elit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "nunc",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "viverra",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "id",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "gravida",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "ut",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": ",",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "convallis",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "blandit",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": " ",
-          },
-          "type": "WhiteSpace",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": "sem",
-          },
-          "type": "Word",
-        },
-        MarkdownNode {
-          "_parentId": 12,
-          "data": {
-            "value": ".",
-          },
-          "type": "Word",
-        },
-      ],
+      "value": "Etiam",
     },
-    "type": "Paragraph",
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "ut",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "vehicula",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "ipsum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "Vivamus",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "viverra",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "odio",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "eu",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "auctor",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "pharetra",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "Sed",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "elit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "nunc",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "viverra",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "id",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "gravida",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "ut",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "convallis",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "blandit",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": "sem",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 12,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
   },
 ]
 `;
@@ -2041,11 +4102,33 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.01.md
   MarkdownNode {
     "_parentId": 0,
     "data": {
-      "breakLineOnEnd": false,
-      "level": 3,
-      "value": "Title",
+      "children": [
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "breakLineOnEnd": false,
+            "level": 1,
+            "value": "Title",
+          },
+          "type": "Heading",
+        },
+      ],
     },
-    "type": "Heading",
+    "type": "Paragraph",
   },
 ]
 `;
@@ -2094,8 +4177,15 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 2,
     "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 2,
+    "data": {
       "breakLineOnEnd": true,
-      "level": 2,
+      "level": 1,
       "value": "Heading 2",
     },
     "type": "Heading",
@@ -2119,8 +4209,22 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 4,
     "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 4,
+    "data": {
       "breakLineOnEnd": true,
-      "level": 3,
+      "level": 1,
       "value": "Heading 3",
     },
     "type": "Heading",
@@ -2144,8 +4248,29 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 6,
     "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 6,
+    "data": {
       "breakLineOnEnd": true,
-      "level": 4,
+      "level": 1,
       "value": "Heading 4",
     },
     "type": "Heading",
@@ -2169,8 +4294,36 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 8,
     "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 8,
+    "data": {
       "breakLineOnEnd": true,
-      "level": 5,
+      "level": 1,
       "value": "Heading 5",
     },
     "type": "Heading",
@@ -2194,8 +4347,43 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
   MarkdownNode {
     "_parentId": 10,
     "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 10,
+    "data": {
       "breakLineOnEnd": false,
-      "level": 6,
+      "level": 1,
       "value": "Heading 6",
     },
     "type": "Heading",
@@ -2203,35 +4391,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/heading.03.md
 ]
 `;
 
-exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.01.md 1`] = `
-[
-  MarkdownNode {
-    "_parentId": 0,
-    "data": {
-      "raw": "<b>",
-      "value": "b",
-    },
-    "type": "OpenHTMLTag",
-  },
-  MarkdownNode {
-    "_parentId": 0,
-    "data": {
-      "value": "Hello",
-    },
-    "type": "Word",
-  },
-  MarkdownNode {
-    "_parentId": 0,
-    "data": {
-      "raw": "</b>",
-      "value": "b",
-    },
-    "type": "CloseHTMLTag",
-  },
-]
-`;
-
-exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.02.md 1`] = `
+exports[`parser-markdown > should parse fixtures ../tests/fixtures/setup.01.md 1`] = `
 [
   MarkdownNode {
     "_parentId": 0,
@@ -2240,7 +4400,14 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.02
         MarkdownNode {
           "_parentId": 0,
           "data": {
-            "value": "Hello",
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": ":",
           },
           "type": "Word",
         },
@@ -2254,39 +4421,509 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.02
         MarkdownNode {
           "_parentId": 0,
           "data": {
-            "raw": "<b>",
-            "value": "b",
-          },
-          "type": "OpenHTMLTag",
-        },
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "Will",
+            "value": "setup",
           },
           "type": "Word",
         },
         MarkdownNode {
           "_parentId": 0,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 0,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "import",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
           "data": {
             "value": " ",
           },
           "type": "WhiteSpace",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 1,
           "data": {
-            "value": "Smith",
+            "value": "{",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 1,
           "data": {
-            "raw": "</b>",
-            "value": "b",
+            "value": " ",
           },
-          "type": "CloseHTMLTag",
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "usePage",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "}",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "from",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "app",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 1,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "page",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "usePage",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 3,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "value": "nani",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 5,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 6,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "value": "page",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 7,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "        ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "setBodyColor",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "#",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "000",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 8,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "        ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "setPadding",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "0",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 9,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 10,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+      ],
+    },
+    "type": "SetupBlock",
+  },
+  MarkdownNode {
+    "_parentId": 11,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
         },
       ],
     },
@@ -2295,7 +4932,7 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.02
 ]
 `;
 
-exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.03.md 1`] = `
+exports[`parser-markdown > should parse fixtures ../tests/fixtures/setup.02.md 1`] = `
 [
   MarkdownNode {
     "_parentId": 0,
@@ -2304,7 +4941,14 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.03
         MarkdownNode {
           "_parentId": 0,
           "data": {
-            "value": "Hello",
+            "value": ":",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "value": ":",
           },
           "type": "Word",
         },
@@ -2318,102 +4962,1713 @@ exports[`parser-markdown > should parse fixtures ../tests/fixtures/html.tag.b.03
         MarkdownNode {
           "_parentId": 0,
           "data": {
-            "raw": "<b>",
+            "value": "setup",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 0,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 0,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "import",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "{",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "ref",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "}",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "from",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "vue",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "value": "'",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 1,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 1,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 2,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 2,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "a",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "ref",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": "0",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 3,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 3,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
             "value": "b",
           },
-          "type": "OpenHTMLTag",
-        },
-        MarkdownNode {
-          "_parentId": 0,
-          "data": {
-            "value": "Will",
-          },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 4,
           "data": {
             "value": " ",
           },
           "type": "WhiteSpace",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 4,
           "data": {
-            "value": "Smith",
+            "value": "=",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 4,
           "data": {
-            "raw": "</b>",
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "ref",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": "1",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 4,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 4,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 5,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 5,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "const",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "sum",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "computed",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "=",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": ">",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "a",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
+            "value": " ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 6,
+          "data": {
             "value": "b",
           },
-          "type": "CloseHTMLTag",
+          "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 6,
           "data": {
-            "value": "\\\\",
+            "value": ")",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 6,
           "data": {
-            "value": "n",
+            "children": [
+              MarkdownNode {
+                "_parentId": 6,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 7,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 7,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "function",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 8,
           "data": {
             "value": " ",
           },
           "type": "WhiteSpace",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 8,
           "data": {
-            "value": "How",
+            "value": "increment",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 8,
           "data": {
-            "value": " ",
+            "value": "(",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": ")",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "value": "{",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 8,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 8,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "        ",
           },
           "type": "WhiteSpace",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 9,
           "data": {
-            "value": "are",
+            "value": "a",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 9,
           "data": {
-            "value": " ",
+            "value": ".",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "value",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 9,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 9,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "        ",
           },
           "type": "WhiteSpace",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 10,
           "data": {
-            "value": "you",
+            "value": "b",
           },
           "type": "Word",
         },
         MarkdownNode {
-          "_parentId": 0,
+          "_parentId": 10,
           "data": {
-            "value": "?",
+            "value": ".",
           },
           "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "value",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "value": "+",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 10,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 10,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "    ",
+          },
+          "type": "WhiteSpace",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "value": "}",
+          },
+          "type": "Word",
+        },
+        MarkdownNode {
+          "_parentId": 11,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 11,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 12,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 12,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+        MarkdownNode {
+          "_parentId": 13,
+          "data": {
+            "children": [
+              MarkdownNode {
+                "_parentId": 13,
+                "data": {
+                  "value": "
+",
+                },
+                "type": "BreakLine",
+              },
+            ],
+          },
+          "type": "Paragraph",
+        },
+      ],
+    },
+    "type": "SetupBlock",
+  },
+  MarkdownNode {
+    "_parentId": 14,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 14,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 14,
+    "data": {
+      "breakLineOnEnd": true,
+      "level": 1,
+      "value": "Data",
+    },
+    "type": "Heading",
+  },
+  MarkdownNode {
+    "_parentId": 15,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 15,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "Sum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "sum",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 16,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 16,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "A",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "a",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 17,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 17,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "B",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "b",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 18,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 18,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 19,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 19,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": ":",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": "script",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": "-",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "value": "btn",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 20,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 20,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "label",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "\\"",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "Update",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "value": "\\"",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 21,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 21,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "    
+    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "import",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "{",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "useBtn",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": ",",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "usePage",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "}",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "from",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "#",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "app",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "value": "'",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 22,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 22,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 23,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 23,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "const",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "btn",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "useBtn",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 24,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 24,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "const",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "page",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "usePage",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 25,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 25,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 26,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 26,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "    ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "btn",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "onClick",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "=",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ">",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": " ",
+    },
+    "type": "WhiteSpace",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "page",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ".",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "increment",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": "(",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "value": ")",
+    },
+    "type": "Word",
+  },
+  MarkdownNode {
+    "_parentId": 27,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 27,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
+        },
+      ],
+    },
+    "type": "Paragraph",
+  },
+  MarkdownNode {
+    "_parentId": 28,
+    "data": {
+      "children": [
+        MarkdownNode {
+          "_parentId": 28,
+          "data": {
+            "value": "
+",
+          },
+          "type": "BreakLine",
         },
       ],
     },
