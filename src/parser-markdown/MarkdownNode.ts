@@ -33,4 +33,28 @@ export default class MarkdownNode<D = undefined | any> {
 
     return false
   }
+
+  public static createBreakLine(data: MarkdownNode['data']) {
+    return new MarkdownNode({
+      _parentId: -1,
+      type: MarkdownNodeType.Paragraph,
+      data: {
+        children: [
+          new MarkdownNode({
+            _parentId: -1,
+            type: MarkdownNodeType.BreakLine,
+            data
+          })
+        ]
+      }
+    })
+  }
+
+  public static createWhiteSpace(data: MarkdownNode['data']) {
+    return new MarkdownNode({
+      _parentId: -1,
+      type: MarkdownNodeType.WhiteSpace,
+      data
+    })
+  }
 }

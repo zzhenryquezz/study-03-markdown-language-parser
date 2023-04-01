@@ -20,11 +20,34 @@ export function createEditor() {
   }
 
   function updateFromNodes(payload: MainNode[]) {
+    const old = JSON.parse(JSON.stringify(nodes.value))
+
     parser.setTokensByNodes(payload)
 
     original.value = parser.toText()
 
     nodes.value = parser.toNodes()
+
+    const newNodes = JSON.parse(JSON.stringify(nodes.value))
+
+    old.forEach((n: any, i: number) => {
+      if (!newNodes[i]) {
+        console.log('node removed', n)
+        return
+      }
+
+      if (n.type !== newNodes[i].type) {
+        console.log('type changed', n.type, newNodes[i].type)
+      }
+
+      if (n._parentId !== newNodes[i]._parentId) {
+        console.log('parent changed', n._parentId, newNodes[i]._parentId)
+      }
+
+      if (JSON.stringify(n.data) !== JSON.stringify(newNodes[i].data)) {
+        console.log('data changed', n.data, newNodes[i].data)
+      }
+    })
   }
 
   return reactive({

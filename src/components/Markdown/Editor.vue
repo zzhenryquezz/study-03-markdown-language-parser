@@ -10,6 +10,7 @@ import NodeBlock from './NodeBlock.vue'
 
 import NodeHeading from './NodeHeading.vue'
 import NodeParagraph from './NodeParagraph.vue'
+import NodeSetupBlock from './NodeSetupBlock.vue'
 
 const editor = useEditor()
 
@@ -43,7 +44,9 @@ mdBlocks.onUpdate(onBlocksUpdate)
 
       <node-paragraph v-else-if="node.type === MarkdownNodeType.Paragraph" :md-index="index" />
 
-      <div v-else>{{ node }}</div>
+      <node-setup-block v-else-if="node.type === MarkdownNodeType.SetupBlock" :md-index="index" />
+
+      <div v-else>No handler {{ node.type }}</div>
     </node-block>
   </div>
 </template>

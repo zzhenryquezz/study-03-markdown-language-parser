@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from 'vue'
+import get from 'lodash/get'
 
 // Components
 import EditorText from './components/EditorText.vue'
 import EditorMarkdown from './components/Markdown/Editor.vue'
 
 import { provideEditor } from './composables/editor'
+import { useLocalStorage } from '@vueuse/core'
 
 const editor = provideEditor()
 
@@ -13,8 +15,6 @@ const files = import.meta.glob('@/tests/fixtures/*.md', {
   as: 'raw',
   eager: true
 })
-
-const selected = ref()
 
 const options = Object.entries(files).map(([key, value]) => {
   const name = key.replace('/src/tests/fixtures/', '')
@@ -25,15 +25,19 @@ const options = Object.entries(files).map(([key, value]) => {
   }
 })
 
-watch(selected, (name) => {
-  const option = options.find((option) => option.name === name)
+const selected = useLocalStorage('selected', options[0].name)
 
-  if (!option) return
+watch(
+  selected,
+  (name) => {
+    const option = options.find((option) => option.name === name)
 
-  editor.updateFromText(option.value)
-})
+    if (!option) return
 
-selected.value = options[1].name
+    editor.updateFromText(option.value)
+  },
+  { immediate: true }
+)
 </script>
 <template>
   <div class="h-screen w-screen flex overflow-hidden">

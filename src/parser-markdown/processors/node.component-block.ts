@@ -30,7 +30,14 @@ export default class ComponentBlockProcessor implements MarkdownNodeProcessor {
       const lineNodes = lines[key]
       const fisrtNode = lineNodes[0]
 
+      const isLast = Number(key) === nodes[nodes.length - 1]._parentId
+
       if (key === first._parentId.toString()) continue
+
+      if (MarkdownNode.isBreakLine(fisrtNode) && isLast) {
+        lineEnd = Number(key)
+        break
+      }
 
       if (MarkdownNode.isBreakLine(fisrtNode)) continue
 
@@ -41,11 +48,11 @@ export default class ComponentBlockProcessor implements MarkdownNodeProcessor {
       break
     }
 
-    if (lineEnd === -1) {
-      lineEnd = nodes[nodes.length - 1]._parentId
-    }
+    let endIndex = nodes.findIndex((n) => n._parentId === lineEnd) - 1
 
-    const endIndex = nodes.findIndex((n) => n._parentId === lineEnd) - 1
+    if (lineEnd === -1) {
+      endIndex = nodes.length - 1
+    }
 
     if (endIndex === -1) {
       throw new MarkdownSyntaxError('Component block is not closed')
@@ -58,26 +65,42 @@ export default class ComponentBlockProcessor implements MarkdownNodeProcessor {
   }
 
   public process: MarkdownNodeProcessor['process'] = (nodes) => {
-    if (!this.isOpening(nodes)) return nodes
+    const result: MarkdownNode[] = []
 
-    const { children, endIndex } = this.mountChildren(nodes)
+    const copyNodes = [...nodes]
 
-    const node = new MarkdownNode({
-      _parentId: nodes[0]._parentId,
-      type: MarkdownNodeType.ComponentBlock,
-      data: {
-        children
+    while (copyNodes.length) {
+      const current = copyNodes[0]
+
+      if (!this.isOpening(copyNodes)) {
+        result.push(current)
+        copyNodes.shift()
+        continue
       }
-    })
 
-    return [node, ...nodes.slice(endIndex)]
+      const { children, endIndex } = this.mountChildren(copyNodes)
+
+      const node = new MarkdownNode({
+        _parentId: nodes[0]._parentId,
+        type: MarkdownNodeType.ComponentBlock,
+        data: {
+          children
+        }
+      })
+
+      result.push(node)
+
+      copyNodes.splice(0, endIndex)
+    }
+
+    return result
   }
 
   public reverse: MarkdownNodeProcessor['reverse'] = (nodes) => {
     const result: MarkdownNode[] = []
 
     for (const node of nodes) {
-      if (node.type !== MarkdownNodeType.ComponentBlock) {
+      if (node.type !== MarkdownNodeType.SetupBlock) {
         result.push(node)
         continue
       }

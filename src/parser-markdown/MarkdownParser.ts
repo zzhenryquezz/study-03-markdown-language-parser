@@ -95,7 +95,9 @@ export default class MarkdonwParser extends MainParser {
 
     tokens.push(Token.from(TokenType.EndOfFile, ''))
 
-    return new MainParser(tokens).toNodes()
+    const result = new MainParser(tokens).toNodes()
+
+    return result
   }
 
   public convertMarkdownNodesToText(nodes: MarkdownNode[]) {
