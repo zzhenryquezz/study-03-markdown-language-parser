@@ -1,59 +1,32 @@
-import type MainNode from '@/parser-main/MainNode'
-import MarkdonwParser from '@/parser-markdown/MarkdownParser'
-import { inject, provide, reactive, ref, type UnwrapRef } from 'vue'
+import type MDNode from '@/markdown/MDNode'
+import MDParser from '@/markdown/MDParser'
+import { inject, provide, reactive, ref } from 'vue'
 
 export function createEditor() {
-  const original = ref('')
-  const nodes = ref<MainNode[]>([])
-  const parser = new MarkdonwParser()
+  const nodes = ref<MDNode[]>([])
+  const parser = new MDParser()
+
+  function toTokens(payload: string) {
+    return parser.toTokens(payload)
+  }
 
   function toText() {
-    return original.value
+    return nodes.value.map((n) => n.toText()).join('')
   }
 
   function updateFromText(payload: string) {
-    original.value = payload
-
-    parser.setTokensByText(payload)
-
-    nodes.value = parser.toNodes()
+    nodes.value = parser.toNodes(payload)
   }
 
-  function updateFromNodes(payload: MainNode[]) {
-    const old = JSON.parse(JSON.stringify(nodes.value))
-
-    parser.setTokensByNodes(payload)
-
-    original.value = parser.toText()
-
-    nodes.value = parser.toNodes()
-
-    const newNodes = JSON.parse(JSON.stringify(nodes.value))
-
-    old.forEach((n: any, i: number) => {
-      if (!newNodes[i]) {
-        console.log('node removed', n)
-        return
-      }
-
-      if (n.type !== newNodes[i].type) {
-        console.log('type changed', n.type, newNodes[i].type)
-      }
-
-      if (n._parentId !== newNodes[i]._parentId) {
-        console.log('parent changed', n._parentId, newNodes[i]._parentId)
-      }
-
-      if (JSON.stringify(n.data) !== JSON.stringify(newNodes[i].data)) {
-        console.log('data changed', n.data, newNodes[i].data)
-      }
-    })
+  function updateFromNodes(payload: MDNode[]) {
+    nodes.value = payload
   }
 
   return reactive({
-    original: original as any as UnwrapRef<typeof original>,
-    nodes: nodes as any as UnwrapRef<typeof nodes>,
+    nodes,
+
     toText,
+    toTokens,
     updateFromText,
     updateFromNodes
   })

@@ -44,6 +44,10 @@ export default class MDParser {
     return nodes
   }
 
+  public toTokens(value: string) {
+    return this.lexer.tokenize(value)
+  }
+
   public toText(nodes: MDNode[]) {
     return nodes.map((node) => node.toText()).join('')
   }

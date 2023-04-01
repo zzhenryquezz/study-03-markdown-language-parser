@@ -1,39 +1,28 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
-import get from 'lodash/get'
+import { watch } from 'vue'
 
 // Components
 import EditorText from './components/EditorText.vue'
+import MDEditor from './components/MDEditor.vue'
 
 import { provideEditor } from './composables/editor'
 import { useLocalStorage } from '@vueuse/core'
+import { useFixturesFiles } from './tests/helpers'
 
 const editor = provideEditor()
 
-const files = import.meta.glob('@/tests/fixtures/*.md', {
-  as: 'raw',
-  eager: true
-})
-
-const options = Object.entries(files).map(([key, value]) => {
-  const name = key.replace('/src/tests/fixtures/', '')
-
-  return {
-    name,
-    value
-  }
-})
+const options = useFixturesFiles()
 
 const selected = useLocalStorage('selected', options[0].name)
 
 watch(
   selected,
-  (name) => {
-    const option = options.find((option) => option.name === name)
+  (value) => {
+    const file = options.find((option) => option.name === value)
 
-    if (!option) return
-
-    editor.updateFromText(option.value)
+    if (file) {
+      editor.updateFromText(file.content)
+    }
   },
   { immediate: true }
 )
@@ -56,11 +45,11 @@ watch(
       </div>
     </div>
 
-    <div class="w-6/12 bg-gray-800 text-white">
+    <div class="w-6/12 bg-gray-800 text-white border-l">
       <div class="text-2xl font-bold px-8 py-4">Vue components</div>
 
       <div class="h-[calc(100%_-_64px)]">
-        <!-- <EditorMarkdown /> -->
+        <MDEditor />
       </div>
     </div>
   </div>
