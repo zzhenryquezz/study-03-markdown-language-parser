@@ -73,7 +73,7 @@ watch(name, update)
 watch(content, update)
 </script>
 <template>
-  <div class="border w-full h-[250px]">
+  <div class="border w-full h-[400px] my-2">
     <input
       v-model="name"
       class="bg-transparent w-full border-b text-white focus:outline-none py-2 px-4"
