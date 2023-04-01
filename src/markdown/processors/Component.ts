@@ -6,21 +6,16 @@ export default class Component extends MDProcessor {
   public order = 10
 
   public findComponentTokenEndIndex() {
-    return this.tokens.findIndex((t, i) => {
+    return this.tokens.findIndex((current, i) => {
       const prev = this.tokens[i - 1]
       const prevPrev = this.tokens[i - 2]
 
-      const isAllBreakLine = [
-        prev && prev.type === TokenType.BreakLine,
-        prevPrev && prevPrev.type === TokenType.BreakLine,
-        t.type === TokenType.BreakLine
-      ]
+      if (current.type === TokenType.EndOfFile) return true
 
-      if (isAllBreakLine.every((v) => v)) return true
+      if (!prev || !prevPrev) return false
 
-      if (t.type === TokenType.EndOfFile) return true
-
-      return false
+      // must have 3 break lines to end the component
+      return [prev, current, prevPrev].every((v) => v.type === TokenType.BreakLine)
     })
   }
 

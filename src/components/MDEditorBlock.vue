@@ -18,10 +18,11 @@ const model = computed({
 })
 </script>
 <template>
-  <div v-if="model" class="w-full flex items-center group">
+  <div v-if="model" class="w-full flex items-center group py-2 first:pt-0">
     <v-btn class="mr-2 opacity-0 group-hover:opacity-100">
       <i-drag size="20" />
     </v-btn>
+
     <MDEditorBlockHeading v-if="model.type === MDNodeType.Heading" v-model="model" />
     <MDEditorComponent v-else-if="model.type === MDNodeType.Component" v-model="model" />
 

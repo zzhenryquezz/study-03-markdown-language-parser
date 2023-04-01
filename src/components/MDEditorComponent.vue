@@ -17,6 +17,7 @@ const model = computed({
 
 const editor = useEditor()
 
+const loading = ref(false)
 const name = ref('')
 const content = ref('')
 
@@ -46,19 +47,27 @@ function setContent() {
     .join('\n')
 }
 function update() {
-  let value = `:: ${name.value}\n`
+  const lines = [`:: ${name.value}`]
 
   content.value.split('\n').forEach((line) => {
-    value += `    ${line}\n`
+    lines.push(`    ${line}`)
   })
+
+  const value = lines.join('\n').trim() + '\n\n\n'
 
   const tokens = editor.toTokens(value)
 
   model.value.tokens = tokens
 }
 
-watch(model, setName, { immediate: true })
-watch(model, setContent, { immediate: true })
+function load() {
+  loading.value = true
+  setName()
+  setContent()
+  loading.value = false
+}
+
+watch(model, load, { immediate: true })
 
 watch(name, update)
 watch(content, update)
