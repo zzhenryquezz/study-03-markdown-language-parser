@@ -4,6 +4,7 @@ import { MDNodeType } from '@/markdown/MDNode'
 import { computed } from 'vue'
 
 import MDEditorBlockHeading from './MDEditorBlockHeading.vue'
+import MDEditorComponent from './MDEditorComponent.vue'
 
 const modelValue = defineProp<MDNode>('modelValue', {
   required: true
@@ -22,5 +23,8 @@ const model = computed({
       <i-drag size="20" />
     </v-btn>
     <MDEditorBlockHeading v-if="model.type === MDNodeType.Heading" v-model="model" />
+    <MDEditorComponent v-else-if="model.type === MDNodeType.Component" v-model="model" />
+
+    <div v-else>Unknown block type: {{ model.type }}</div>
   </div>
 </template>

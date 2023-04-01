@@ -29,6 +29,7 @@ export function createEditor() {
 
   return reactive({
     nodes,
+    parser,
 
     toText,
     toTokens,

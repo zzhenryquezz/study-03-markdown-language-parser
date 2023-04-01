@@ -29,7 +29,7 @@ function load() {
     .map((token) => token.value)
     .join('')
 
-  tag.value = `h${level + 1}`
+  tag.value = `h${level}`
   text.value = content
 }
 
