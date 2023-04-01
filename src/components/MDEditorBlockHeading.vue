@@ -2,6 +2,7 @@
 import type MDNode from '@/markdown/MDNode'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useEditor } from '@/composables/editor'
+import Token, { TokenType } from '@/lexer/Token'
 
 const modelValue = defineProp<MDNode>('modelValue', {
   required: true
@@ -40,6 +41,12 @@ function update() {
   content += el.value?.innerText || ''
 
   const tokens = editor.toTokens(content)
+
+  const last = model.value.tokens[model.value.tokens.length - 1]
+
+  if (last.type === TokenType.BreakLine || last.type === TokenType.EndOfFile) {
+    tokens.push(last)
+  }
 
   model.value.tokens = tokens
 }

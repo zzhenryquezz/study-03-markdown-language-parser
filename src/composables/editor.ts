@@ -7,7 +7,12 @@ export function createEditor() {
   const parser = new MDParser()
 
   function toTokens(payload: string) {
-    return parser.toTokens(payload)
+    const tokens = parser.toTokens(payload)
+
+    // remove eof
+    tokens.pop()
+
+    return tokens
   }
 
   function toText() {
