@@ -29,11 +29,15 @@ export default class Token {
     return Token.from(TokenType.Word, value)
   }
 
-  public static fromWhiteSpace() {
-    return Token.from(TokenType.WhiteSpace, ' ')
+  public static fromWhiteSpace(value = ' ') {
+    return Token.from(TokenType.WhiteSpace, value)
   }
 
   public static fromBreakLine() {
     return Token.from(TokenType.BreakLine, '\n')
+  }
+
+  public static fromEndOfFile() {
+    return Token.from(TokenType.EndOfFile, '')
   }
 }
