@@ -4,7 +4,6 @@ import get from 'lodash/get'
 
 // Components
 import EditorText from './components/EditorText.vue'
-import EditorMarkdown from './components/Markdown/Editor.vue'
 
 import { provideEditor } from './composables/editor'
 import { useLocalStorage } from '@vueuse/core'
@@ -61,7 +60,7 @@ watch(
       <div class="text-2xl font-bold px-8 py-4">Vue components</div>
 
       <div class="h-[calc(100%_-_64px)]">
-        <EditorMarkdown />
+        <!-- <EditorMarkdown /> -->
       </div>
     </div>
   </div>
